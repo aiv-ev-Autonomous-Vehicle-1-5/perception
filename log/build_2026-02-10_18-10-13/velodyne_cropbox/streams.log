@@ -1,0 +1,34 @@
+[0.009s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox -- -j28 -l28
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/cropbox_component.dir/src/cropbox_component.cpp.o[0m
+[5.652s] [100%] [32m[1mLinking CXX shared library libcropbox_component.so[0m
+[6.115s] [100%] Built target cropbox_component
+[6.124s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox -- -j28 -l28
+[6.125s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox
+[6.131s] -- Install configuration: ""
+[6.131s] -- Execute custom install script
+[6.131s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/lib/libcropbox_component.so
+[6.131s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/include/velodyne_cropbox/cropbox_component.hpp
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/config/default_cropbox_params.yaml
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/launch/velodyne_with_cropbox-VLP16-launch.py
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/library_path.sh
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/library_path.dsv
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/ament_index/resource_index/package_run_dependencies/velodyne_cropbox
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/ament_index/resource_index/parent_prefix_path/velodyne_cropbox
+[6.132s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/ament_prefix_path.sh
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/ament_prefix_path.dsv
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/path.sh
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/environment/path.dsv
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/local_setup.bash
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/local_setup.sh
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/local_setup.zsh
+[6.133s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/local_setup.dsv
+[6.133s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/package.dsv
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/ament_index/resource_index/packages/velodyne_cropbox
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/ament_index/resource_index/rclcpp_components/velodyne_cropbox
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/cmake/ament_cmake_export_libraries-extras.cmake
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/cmake/velodyne_cropboxConfig.cmake
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/cmake/velodyne_cropboxConfig-version.cmake
+[6.139s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/share/velodyne_cropbox/package.xml
+[6.140s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/velodyne_cropbox

@@ -11,7 +11,7 @@ cropbox_component:
 
     # Z-axis: up/down
     z_min: -2.0
-    z_max: 2.0
+    z_max: 4.5
 
     # If true, remove points inside the box instead of outside
     negative: false

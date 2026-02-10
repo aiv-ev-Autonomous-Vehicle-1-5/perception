@@ -30,10 +30,6 @@ def generate_launch_description():
         cropbox_params = yaml.safe_load(f)['cropbox_component']['ros__parameters']
 
     # Velodyne laserscan parameters
-    laserscan_share_dir = ament_index_python.packages.get_package_share_directory('velodyne_laserscan')
-    laserscan_params_file = os.path.join(laserscan_share_dir, 'config', 'default-velodyne_laserscan_node-params.yaml')
-    with open(laserscan_params_file, 'r') as f:
-        laserscan_params = yaml.safe_load(f)['velodyne_laserscan_node']['ros__parameters']
 
     # Create composable node container with all components
     container = ComposableNodeContainer(
@@ -55,9 +51,10 @@ def generate_launch_description():
                     plugin='velodyne_pointcloud::Transform',
                     name='velodyne_transform_node',
                     parameters=[convert_params],
-                    remappings=[
-                        ('velodyne_points', 'velodyne_points_raw')  # Rename output
-                    ]),
+                    # remappings=[
+                    #     ('velodyne_points', 'velodyne_points_raw')  # Rename output
+                    # ]
+                    ),
 
                 # 3. CropBox filter - filters point cloud by ROI
                 ComposableNode(
@@ -66,19 +63,12 @@ def generate_launch_description():
                     name='cropbox_component',
                     parameters=[cropbox_params],
                     remappings=[
-                        ('input', 'velodyne_points_raw'),   # Subscribe to raw points
-                        ('output', 'velodyne_points')        # Publish filtered points
+                        ('input', 'velodyne_points'),   # Subscribe to raw points
+                        ('output', 'velodyne_points_cropped')        # Publish filtered points
                     ]),
 
                 # 4. Velodyne laserscan - converts to 2D scan
-                ComposableNode(
-                    package='velodyne_laserscan',
-                    plugin='velodyne_laserscan::VelodyneLaserScan',
-                    name='velodyne_laserscan_node',
-                    parameters=[laserscan_params],
-                    remappings=[
-                        ('velodyne_points', 'velodyne_points')  # Use filtered points
-                    ]),
+
             ],
             output='both',
     )
