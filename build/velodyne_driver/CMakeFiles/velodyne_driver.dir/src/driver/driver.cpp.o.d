@@ -1,7 +1,7 @@
 CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o: \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/src/driver/driver.cpp \
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/src/driver/driver.cpp \
  /usr/include/stdc-predef.h \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/include/velodyne_driver/driver.hpp \
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/include/velodyne_driver/driver.hpp \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -640,7 +640,7 @@ CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o: \
  /opt/ros/humble/include/diagnostic_updater/publisher.hpp \
  /opt/ros/humble/include/diagnostic_updater/update_functions.hpp \
  /usr/include/c++/11/math.h \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/include/velodyne_driver/input.hpp \
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/include/velodyne_driver/input.hpp \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \

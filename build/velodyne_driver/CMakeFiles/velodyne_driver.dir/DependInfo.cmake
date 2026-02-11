@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/src/driver/driver.cpp" "CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o" "gcc" "CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o.d"
+  "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/src/driver/driver.cpp" "CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o" "gcc" "CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud
@@ -82,6 +82,6 @@ CMakeFiles/velodyne_pointcloud_uninstall.dir/clean:
 .PHONY : CMakeFiles/velodyne_pointcloud_uninstall.dir/clean
 
 CMakeFiles/velodyne_pointcloud_uninstall.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/CMakeFiles/velodyne_pointcloud_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/CMakeFiles/velodyne_pointcloud_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/velodyne_pointcloud_uninstall.dir/depend
 

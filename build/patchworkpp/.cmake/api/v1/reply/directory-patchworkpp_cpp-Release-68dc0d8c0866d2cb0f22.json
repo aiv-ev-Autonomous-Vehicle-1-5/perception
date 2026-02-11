@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "patchworkpp_cpp",
+		"source" : "/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/cpp"
+	}
+}

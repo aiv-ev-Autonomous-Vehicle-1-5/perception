@@ -1,0 +1,20 @@
+Built target ground_seg_cores
+Built target patchworkpp_node
+[35m[1mConsolidate compiler generated dependencies of target gseg_component[0m
+[32mBuilding CXX object CMakeFiles/gseg_component.dir/src/GroundSegmentationServer.cpp.o[0m
+[01m[K/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros/src/GroundSegmentationServer.cpp:[m[K In constructor ‘[01m[Kpatchworkpp_ros::GroundSegmentationServer::GroundSegmentationServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros/src/GroundSegmentationServer.cpp:33:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kare_parameter[m[K’ was not declared in this scope; did you mean ‘[01m[Khas_parameter[m[K’?
+   33 | in_pts   = declare_parameter<[01;31m[Kare_parameter<int>[m[K("num_min_pts", params.num_min_pts);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                              [32m[Khas_parameter[m[K
+[01m[K/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros/src/GroundSegmentationServer.cpp:33:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   33 |   params.num_min_pts   = [01;31m[Kdeclare_parameter<are_parameter<int>("num_min_pts", params.num_min_pts)[m[K;
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros/src/GroundSegmentationServer.cpp:33:26:[m[K [01;31m[Kerror: [m[Kcannot resolve overloaded function ‘[01m[Kdeclare_parameter[m[K’ based on conversion to type ‘[01m[Kint[m[K’
+[01m[K/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros/src/GroundSegmentationServer.cpp:34:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecldouble[m[K’ was not declared in this scope; did you mean ‘[01m[Kdouble[m[K’?
+   34 |   params.th_seeds      = [01;31m[Kdecldouble[m[K>("th_seeds", params.th_seeds);
+      |                          [01;31m[K^~~~~~~~~~[m[K
+      |                          [32m[Kdouble[m[K
+gmake[2]: *** [CMakeFiles/gseg_component.dir/build.make:76: CMakeFiles/gseg_component.dir/src/GroundSegmentationServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:2244: CMakeFiles/gseg_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

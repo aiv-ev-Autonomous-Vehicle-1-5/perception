@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan/src/velodyne_laserscan.cpp" "CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o" "gcc" "CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o.d"
+  "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan/src/velodyne_laserscan.cpp" "CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o" "gcc" "CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o.d"
   )
 
 # Targets to which this target links.

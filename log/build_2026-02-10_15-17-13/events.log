@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000104] (-) JobUnselected: {'identifier': 'velodyne'}
-[0.000126] (-) JobUnselected: {'identifier': 'velodyne_driver'}
-[0.000142] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
-[0.000158] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
-[0.000172] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
-[0.000187] (-) EventReactorShutdown: {}

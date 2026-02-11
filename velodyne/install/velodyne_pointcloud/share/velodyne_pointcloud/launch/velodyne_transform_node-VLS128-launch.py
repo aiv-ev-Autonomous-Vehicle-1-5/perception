@@ -1,1 +1,0 @@
-/home/aiv/workspace/ros2/velodyne/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-launch.py

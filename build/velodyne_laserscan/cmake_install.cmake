@@ -1,4 +1,4 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan
+# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -86,13 +86,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_laserscan" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan/include/velodyne_laserscan/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_laserscan" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan/include/velodyne_laserscan/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_laserscan" TYPE DIRECTORY FILES
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan/config"
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan/launch"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan/config"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan/launch"
     )
 endif()
 
@@ -187,7 +187,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_laserscan" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_laserscan" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

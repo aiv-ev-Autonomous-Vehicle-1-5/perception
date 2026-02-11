@@ -1,4 +1,4 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver
+# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -109,18 +109,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/include/velodyne_driver/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/include/velodyne_driver/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE DIRECTORY FILES
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/config"
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/launch"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/config"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/launch"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver" TYPE PROGRAM FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/src/vdump")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver" TYPE PROGRAM FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/src/vdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -214,7 +214,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

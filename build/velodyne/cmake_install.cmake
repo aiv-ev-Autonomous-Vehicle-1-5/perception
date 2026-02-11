@@ -1,4 +1,4 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne
+# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -102,7 +102,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

@@ -630,7 +630,7 @@ velodyne_pointcloud_BINARY_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/build/velodyne_p
 velodyne_pointcloud_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-velodyne_pointcloud_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud
+velodyne_pointcloud_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud
 
 //Dependencies for the target
 velodyne_rawdata_LIB_DEPENDS:STATIC=general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;pcl_common;general;Boost::system;general;Boost::filesystem;general;Boost::date_time;general;Boost::iostreams;general;Boost::serialization;general;rclcpp::rclcpp;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;general;tf2::tf2;general;tf2_ros::tf2_ros;general;velodyne_msgs::velodyne_msgs__rosidl_generator_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_generator_py;general;yaml-cpp;
@@ -738,7 +738,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

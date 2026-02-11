@@ -1,1 +1,0 @@
-/home/aiv/workspace/ros2/velodyne/build/velodyne_msgs/ament_cmake_environment_hooks/local_setup.sh

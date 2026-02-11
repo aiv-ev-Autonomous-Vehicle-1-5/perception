@@ -1,1 +1,0 @@
-/home/aiv/workspace/ros2/velodyne/velodyne_laserscan/launch/velodyne_laserscan_node-composed-launch.py

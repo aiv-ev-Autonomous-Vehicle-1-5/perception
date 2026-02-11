@@ -574,7 +574,7 @@ velodyne_driver_IS_TOP_LEVEL:STATIC=ON
 velodyne_driver_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;velodyne_input;general;velodyne_msgs::velodyne_msgs__rosidl_generator_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_generator_py;general;tf2_ros::tf2_ros;
 
 //Value Computed by CMake
-velodyne_driver_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver
+velodyne_driver_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver
 
 //Dependencies for the target
 velodyne_input_LIB_DEPENDS:STATIC=general;-lpcap;general;rclcpp::rclcpp;general;velodyne_msgs::velodyne_msgs__rosidl_generator_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_fastrtps_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_c;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_introspection_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_typesupport_cpp;general;velodyne_msgs::velodyne_msgs__rosidl_generator_py;
@@ -677,7 +677,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

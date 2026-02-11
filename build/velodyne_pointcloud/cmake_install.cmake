@@ -1,4 +1,4 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud
+# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -132,14 +132,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_pointcloud" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/include/velodyne_pointcloud/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_pointcloud" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/include/velodyne_pointcloud/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_pointcloud" TYPE DIRECTORY FILES
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/config"
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/launch"
-    "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/params"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/config"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/launch"
+    "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/params"
     )
 endif()
 
@@ -246,7 +246,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_pointcloud" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_pointcloud" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

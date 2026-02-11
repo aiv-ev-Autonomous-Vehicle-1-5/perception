@@ -1,1 +1,0 @@
-/home/aiv/workspace/ros2/velodyne/velodyne_driver/launch/velodyne_driver_node-VLP32C-launch.py

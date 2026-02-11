@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud
@@ -70,18 +70,18 @@ include tests/CMakeFiles/test_row_step.dir/progress.make
 include tests/CMakeFiles/test_row_step.dir/flags.make
 
 tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o: tests/CMakeFiles/test_row_step.dir/flags.make
-tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests/test_row_step.cpp
+tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests/test_row_step.cpp
 tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o: tests/CMakeFiles/test_row_step.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o"
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o -MF CMakeFiles/test_row_step.dir/test_row_step.cpp.o.d -o CMakeFiles/test_row_step.dir/test_row_step.cpp.o -c /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests/test_row_step.cpp
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o -MF CMakeFiles/test_row_step.dir/test_row_step.cpp.o.d -o CMakeFiles/test_row_step.dir/test_row_step.cpp.o -c /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests/test_row_step.cpp
 
 tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_row_step.dir/test_row_step.cpp.i"
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests/test_row_step.cpp > CMakeFiles/test_row_step.dir/test_row_step.cpp.i
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests/test_row_step.cpp > CMakeFiles/test_row_step.dir/test_row_step.cpp.i
 
 tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_row_step.dir/test_row_step.cpp.s"
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests/test_row_step.cpp -o CMakeFiles/test_row_step.dir/test_row_step.cpp.s
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests/test_row_step.cpp -o CMakeFiles/test_row_step.dir/test_row_step.cpp.s
 
 # Object files for target test_row_step
 test_row_step_OBJECTS = \
@@ -222,6 +222,6 @@ tests/CMakeFiles/test_row_step.dir/clean:
 .PHONY : tests/CMakeFiles/test_row_step.dir/clean
 
 tests/CMakeFiles/test_row_step.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests/CMakeFiles/test_row_step.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests /home/aiv/ev_ws/ros2_ver2/build/velodyne_pointcloud/tests/CMakeFiles/test_row_step.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test_row_step.dir/depend
 

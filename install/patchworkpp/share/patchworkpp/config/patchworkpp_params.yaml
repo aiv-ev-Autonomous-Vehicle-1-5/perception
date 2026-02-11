@@ -1,0 +1,40 @@
+patchworkpp_node:
+  ros__parameters:
+    # base frame id
+    base_frame: "velodyne"
+
+    # 센서 지면 높이 (미터)
+    sensor_height: 1.88
+
+    # PCA 기반 지면 추정 반복 횟수
+    num_iter: 3
+
+    # 초기 시드 선택 시 최저점 후보 최대 개수
+    num_lpr: 20
+
+    # 각 패치에서 지면으로 추정하기 위한 최소 포인트 수
+    num_min_pts: 0
+
+    # 초기 시드 선택 시 최저점 임계값
+    th_seeds: 0.3
+
+    # 지면 두께 임계값
+    th_dist: 0.125
+
+    # 수직 구조물 초기 시드 선택 임계값
+    th_seeds_v: 0.25
+
+    # 수직 구조물 두께 임계값
+    th_dist_v: 0.9
+
+    # 지면 추정 최대 범위 (미터)
+    max_range: 80.0
+
+    # 지면 추정 최소 범위 (미터)
+    min_range: 1.0
+
+    # Ground Likelihood Estimation(GLE) 수직성 임계값
+    uprightness_thr: 0.101
+
+    # 상세 로그 출력
+    verbose: true

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver
@@ -106,6 +106,6 @@ gtest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/CMakeFiles/gtest.dir/clean
 
 gtest/CMakeFiles/gtest.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver /opt/ros/humble/src/gtest_vendor /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver/gtest /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver /opt/ros/humble/src/gtest_vendor /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver/gtest /home/aiv/ev_ws/ros2_ver2/build/velodyne_driver/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/CMakeFiles/gtest.dir/depend
 

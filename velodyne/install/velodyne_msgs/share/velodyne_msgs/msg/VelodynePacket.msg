@@ -1,1 +1,0 @@
-/home/aiv/workspace/ros2/velodyne/velodyne_msgs/msg/VelodynePacket.msg

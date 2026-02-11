@@ -1,4 +1,4 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_pointcloud/tests
+# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_pointcloud/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

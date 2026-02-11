@@ -1,1 +1,17 @@
-/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_cropbox/config/default_cropbox_params.yaml
+cropbox_component:
+  ros__parameters:
+    # CropBox ROI parameters (in meters)
+    # X-axis: forward/backward (vehicle coordinate)
+    x_min: -10.0
+    x_max: 50.0
+
+    # Y-axis: left/right
+    y_min: -10.0
+    y_max: 10.0
+
+    # Z-axis: up/down
+    z_min: -2.0
+    z_max: 4.5
+
+    # If true, remove points inside the box instead of outside
+    negative: false

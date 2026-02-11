@@ -523,7 +523,7 @@ velodyne_laserscan_IS_TOP_LEVEL:STATIC=ON
 velodyne_laserscan_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;
 
 //Value Computed by CMake
-velodyne_laserscan_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan
+velodyne_laserscan_SOURCE_DIR:STATIC=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
@@ -620,7 +620,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_laserscan
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_laserscan
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

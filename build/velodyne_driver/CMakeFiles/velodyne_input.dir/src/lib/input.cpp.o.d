@@ -1,7 +1,7 @@
 CMakeFiles/velodyne_input.dir/src/lib/input.cpp.o: \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/src/lib/input.cpp \
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/src/lib/input.cpp \
  /usr/include/stdc-predef.h \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/include/velodyne_driver/input.hpp \
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/include/velodyne_driver/input.hpp \
  /usr/include/netinet/in.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -664,4 +664,4 @@ CMakeFiles/velodyne_input.dir/src/lib/input.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
  /usr/include/x86_64-linux-gnu/sys/file.h \
- /home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_driver/include/velodyne_driver/time_conversion.hpp
+ /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_driver/include/velodyne_driver/time_conversion.hpp
