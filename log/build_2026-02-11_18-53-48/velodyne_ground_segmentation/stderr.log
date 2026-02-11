@@ -1,0 +1,4 @@
+/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_ground_segmentation/src/ground_segmentation_component.cpp: In member function ‘void velodyne_ground_segmentation::GroundSegmentationComponent::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_ground_segmentation/src/ground_segmentation_component.cpp:45:8: warning: variable ‘has_time’ set but not used [-Wunused-but-set-variable]
+   45 |   bool has_time = false;
+      |        ^~~~~~~~

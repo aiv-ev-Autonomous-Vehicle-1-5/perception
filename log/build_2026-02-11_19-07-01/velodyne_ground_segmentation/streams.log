@@ -1,0 +1,21 @@
+[0.006s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation -- -j28 -l28
+[0.045s] [ 50%] Building CXX object CMakeFiles/ground_segmentation_component.dir/src/ground_segmentation_component.cpp.o
+[3.915s] [100%] Linking CXX shared library libground_segmentation_component.so
+[4.127s] [100%] Built target ground_segmentation_component
+[4.136s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation -- -j28 -l28
+[4.136s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation
+[4.141s] -- Install configuration: ""
+[4.141s] -- Installing: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/lib/libground_segmentation_component.so
+[4.143s] -- Set runtime path of "/home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/lib/libground_segmentation_component.so" to ""
+[4.143s] -- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/include
+[4.143s] -- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/include/velodyne_ground_segmentation
+[4.143s] -- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/include/velodyne_ground_segmentation/ground_segmentation_component.hpp
+[4.143s] -- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/share/velodyne_ground_segmentation/config
+[4.143s] -- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/velodyne_ground_segmentation/share/velodyne_ground_segmentation/config/default_ground_segmentation_params.yaml
+[4.143s] CMake Error at cmake_install.cmake:77 (file):
+[4.143s]   file INSTALL cannot find
+[4.143s]   "/home/aiv/ev_ws/ros2_ver2/velodyne/velodyne_ground_segmentation/launch":
+[4.144s]   No such file or directory.
+[4.144s] 
+[4.144s] 
+[4.144s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/velodyne_ground_segmentation

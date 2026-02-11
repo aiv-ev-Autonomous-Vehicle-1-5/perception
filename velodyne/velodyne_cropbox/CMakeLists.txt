@@ -10,8 +10,6 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(pcl_conversions REQUIRED)
-find_package(PCL REQUIRED COMPONENTS common filters)
 
 # Create shared library component
 add_library(cropbox_component SHARED
@@ -21,7 +19,6 @@ add_library(cropbox_component SHARED
 target_include_directories(cropbox_component PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
-  ${PCL_INCLUDE_DIRS}
 )
 
 target_compile_features(cropbox_component PUBLIC cxx_std_17)
@@ -30,11 +27,6 @@ ament_target_dependencies(cropbox_component
   rclcpp
   rclcpp_components
   sensor_msgs
-  pcl_conversions
-)
-
-target_link_libraries(cropbox_component
-  ${PCL_LIBRARIES}
 )
 
 # Register the component with rclcpp_components
@@ -75,8 +67,6 @@ ament_export_dependencies(
   rclcpp
   rclcpp_components
   sensor_msgs
-  pcl_conversions
-  PCL
 )
 
 ament_package()

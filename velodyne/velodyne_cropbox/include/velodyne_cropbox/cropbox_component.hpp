@@ -4,9 +4,6 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
-#include <pcl/filters/crop_box.h>
 
 namespace velodyne_cropbox
 {
@@ -27,9 +24,6 @@ private:
   double y_min_, y_max_;
   double z_min_, z_max_;
   bool negative_;  // If true, remove points inside the box instead of outside
-
-  // PCL CropBox filter
-  pcl::CropBox<pcl::PointXYZI> crop_box_;
 };
 
 }  // namespace velodyne_cropbox

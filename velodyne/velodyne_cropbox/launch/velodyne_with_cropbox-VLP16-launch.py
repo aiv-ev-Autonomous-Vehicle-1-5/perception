@@ -1,4 +1,4 @@
-"""Launch Velodyne with CropBox filter in a composable container for zero-copy communication."""
+"""Launch Velodyne with Ground Segmentation and CropBox filter in a composable container."""
 
 import os
 import yaml
@@ -23,15 +23,20 @@ def generate_launch_description():
         convert_params = yaml.safe_load(f)['velodyne_transform_node']['ros__parameters']
     convert_params['calibration'] = os.path.join(convert_share_dir, 'params', 'VLP16db.yaml')
 
+    # Ground segmentation parameters
+    ground_seg_share_dir = ament_index_python.packages.get_package_share_directory('velodyne_ground_segmentation')
+    ground_seg_params_file = os.path.join(ground_seg_share_dir, 'config', 'default_ground_segmentation_params.yaml')
+    with open(ground_seg_params_file, 'r') as f:
+        ground_seg_params = yaml.safe_load(f)['ground_segmentation_component']['ros__parameters']
+
     # CropBox parameters
     cropbox_share_dir = ament_index_python.packages.get_package_share_directory('velodyne_cropbox')
     cropbox_params_file = os.path.join(cropbox_share_dir, 'config', 'default_cropbox_params.yaml')
     with open(cropbox_params_file, 'r') as f:
         cropbox_params = yaml.safe_load(f)['cropbox_component']['ros__parameters']
 
-    # Velodyne laserscan parameters
-
     # Create composable node container with all components
+    # Pipeline: Driver -> Transform -> CropBox (ROI) -> GroundSegmentation
     container = ComposableNodeContainer(
             name='velodyne_container',
             namespace='',
@@ -50,24 +55,29 @@ def generate_launch_description():
                     package='velodyne_pointcloud',
                     plugin='velodyne_pointcloud::Transform',
                     name='velodyne_transform_node',
-                    parameters=[convert_params],
-                    # remappings=[
-                    #     ('velodyne_points', 'velodyne_points_raw')  # Rename output
-                    # ]
-                    ),
+                    parameters=[convert_params]),
 
-                # 3. CropBox filter - filters point cloud by ROI
+                # 3. CropBox filter - ROI filtering (preserves ring/time fields)
                 ComposableNode(
                     package='velodyne_cropbox',
                     plugin='velodyne_cropbox::CropBoxComponent',
                     name='cropbox_component',
                     parameters=[cropbox_params],
                     remappings=[
-                        ('input', 'velodyne_points'),   # Subscribe to raw points
-                        ('output', 'velodyne_points_cropped')        # Publish filtered points
+                        ('input', 'velodyne_points'),
+                        ('output', 'velodyne_points_cropped')
                     ]),
 
-                # 4. Velodyne laserscan - converts to 2D scan
+                # 4. Ground segmentation - removes ground points using ring info
+                ComposableNode(
+                    package='velodyne_ground_segmentation',
+                    plugin='velodyne_ground_segmentation::GroundSegmentationComponent',
+                    name='ground_segmentation_component',
+                    parameters=[ground_seg_params],
+                    remappings=[
+                        ('input', 'velodyne_points_cropped'),
+                        ('output', 'velodyne_points_no_ground')
+                    ]),
 
             ],
             output='both',
