@@ -1,0 +1,1 @@
+/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/clustering_component.hpp

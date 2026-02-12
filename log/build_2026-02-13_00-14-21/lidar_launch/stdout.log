@@ -1,0 +1,24 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aiv/ev_ws/ros2_ver2/build/lidar_launch
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/launch/.my_velodyne_VLP16-composed-launch.py.swp
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/launch/my_velodyne_VLP16-composed-launch.py
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/ament_index/resource_index/package_run_dependencies/lidar_launch
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/ament_index/resource_index/parent_prefix_path/lidar_launch
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/environment/ament_prefix_path.sh
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/environment/ament_prefix_path.dsv
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/environment/path.sh
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/environment/path.dsv
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/local_setup.bash
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/local_setup.sh
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/local_setup.zsh
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/local_setup.dsv
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/package.dsv
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/ament_index/resource_index/packages/lidar_launch
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/cmake/lidar_launchConfig.cmake
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/cmake/lidar_launchConfig-version.cmake
+-- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_launch/share/lidar_launch/package.xml

@@ -1,0 +1,5 @@
+clustering_component:
+  ros__parameters:
+    eps: 0.5
+    min_pts: 5
+    use_gpu: true

@@ -1,0 +1,1 @@
+/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/ament_cmake_core/lidar_clusteringConfig.cmake

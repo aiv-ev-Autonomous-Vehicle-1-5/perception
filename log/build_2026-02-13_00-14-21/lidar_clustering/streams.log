@@ -1,0 +1,64 @@
+[0.007s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering
+[0.038s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.114s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.122s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.139s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.141s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.145s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.160s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.183s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.185s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.198s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.227s] -- Found rclcpp_components: 16.0.17 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.238s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.293s] -- Configuring done
+[0.299s] -- Generating done
+[0.301s] -- Build files have been written to: /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering
+[0.306s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering
+[0.306s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering -- -j28 -l28
+[0.335s] [35m[1mConsolidate compiler generated dependencies of target dbscan_gpu_kernels[0m
+[0.344s] [ 28%] Built target dbscan_gpu_kernels
+[0.353s] [35m[1mConsolidate compiler generated dependencies of target clustering_component[0m
+[0.365s] [ 42%] [32m[1mLinking CUDA device code CMakeFiles/clustering_component.dir/cmake_device_link.o[0m
+[0.380s] nvlink warning : Skipping incompatible '/lib/x86_64-linux-gnu/libdl.a' when searching for -ldl
+[0.380s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libdl.a' when searching for -ldl
+[0.380s] nvlink warning : Skipping incompatible '/lib/x86_64-linux-gnu/librt.a' when searching for -lrt
+[0.380s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/librt.a' when searching for -lrt
+[0.380s] nvlink warning : Skipping incompatible '/lib/x86_64-linux-gnu/libpthread.a' when searching for -lpthread
+[0.380s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libpthread.a' when searching for -lpthread
+[0.409s] [ 57%] [32m[1mLinking CXX shared library libclustering_component.so[0m
+[0.630s] [100%] Built target clustering_component
+[0.639s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering -- -j28 -l28
+[0.647s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering
+[0.652s] -- Install configuration: ""
+[0.652s] -- Execute custom install script
+[0.652s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib/libclustering_component.so
+[0.658s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/clustering_component.hpp
+[0.664s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan.hpp
+[0.671s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan_gpu.hpp
+[0.675s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h
+[0.681s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/nanoflann.hpp
+[0.686s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/config/clustering_params.yaml
+[0.692s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/library_path.sh
+[0.699s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/library_path.dsv
+[0.703s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/package_run_dependencies/lidar_clustering
+[0.709s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/parent_prefix_path/lidar_clustering
+[0.714s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/ament_prefix_path.sh
+[0.718s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/ament_prefix_path.dsv
+[0.725s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/path.sh
+[0.730s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/path.dsv
+[0.736s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.bash
+[0.740s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.sh
+[0.746s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.zsh
+[0.752s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.dsv
+[0.758s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/package.dsv
+[0.764s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/packages/lidar_clustering
+[0.769s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/rclcpp_components/lidar_clustering
+[0.774s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.779s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_libraries-extras.cmake
+[0.785s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.791s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/lidar_clusteringConfig.cmake
+[0.795s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/lidar_clusteringConfig-version.cmake
+[0.801s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/package.xml
+[0.809s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering

@@ -35,7 +35,13 @@ def generate_launch_description():
     with open(patchworkpp_params_file, 'r') as f:
         patchworkpp_params = yaml.safe_load(f)['patchworkpp_node']['ros__parameters']
 
-    # Pipeline: Driver -> Transform -> CropBox (ROI) -> Patchwork++ (Ground Seg)
+    # DBSCAN Clustering parameters
+    clustering_share_dir = ament_index_python.packages.get_package_share_directory('lidar_clustering')
+    clustering_params_file = os.path.join(clustering_share_dir, 'config', 'clustering_params.yaml')
+    with open(clustering_params_file, 'r') as f:
+        clustering_params = yaml.safe_load(f)['clustering_component']['ros__parameters']
+
+    # Pipeline: Driver -> Transform -> CropBox (ROI) -> Patchwork++ (Ground Seg) -> DBSCAN Clustering
     container = ComposableNodeContainer(
             name='velodyne_container',
             namespace='',
@@ -75,6 +81,17 @@ def generate_launch_description():
                     parameters=[patchworkpp_params],
                     remappings=[
                         ('pointcloud_topic', 'velodyne_points_cropped'),
+                    ]),
+
+                # 5. DBSCAN Clustering - obstacle grouping
+                ComposableNode(
+                    package='lidar_clustering',
+                    plugin='lidar_clustering::ClusteringComponent',
+                    name='clustering_component',
+                    parameters=[clustering_params],
+                    remappings=[
+                        ('input', '/patchworkpp/nonground'),
+                        ('output', '/clustering/nonground')
                     ]),
 
             ],

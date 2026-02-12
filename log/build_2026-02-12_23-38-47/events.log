@@ -1,0 +1,882 @@
+[0.000000] (-) TimerEvent: {}
+[0.000406] (-) JobUnselected: {'identifier': 'lidar_launch'}
+[0.000435] (-) JobUnselected: {'identifier': 'patchworkpp'}
+[0.000458] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.000508] (-) JobUnselected: {'identifier': 'velodyne_cropbox'}
+[0.000532] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.000547] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.000561] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.000574] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.000589] (lidar_clustering) JobQueued: {'identifier': 'lidar_clustering', 'dependencies': OrderedDict()}
+[0.000606] (lidar_clustering) JobStarted: {'identifier': 'lidar_clustering'}
+[0.007320] (lidar_clustering) JobProgress: {'identifier': 'lidar_clustering', 'progress': 'cmake'}
+[0.007859] (lidar_clustering) JobProgress: {'identifier': 'lidar_clustering', 'progress': 'build'}
+[0.008249] (lidar_clustering) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering', '--', '-j28', '-l28'], 'cwd': '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aiv'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/lib:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp/lib:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2/install/patchworkpp/lib:/home/aiv/ros2_study/install/my_first_package_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_serial/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_util/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aiv'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/aiv/.nvm/versions/node/v24.13.0/bin'), ('NVM_INC', '/home/aiv/.nvm/versions/node/v24.13.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2075'), ('SYSTEMD_EXEC_PID', '2338'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3200'), ('NVM_DIR', '/home/aiv/.nvm'), ('COLCON_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install:/home/aiv/ev_ws/ros2/install:/home/aiv/ros2_study/install:/home/aiv/workspace/ros2/erp42_ros/install:/home/aiv/workspace/ros2/t870_ros/install:/home/aiv/workspace/ros2/erp42_racing_ros/install:/home/aiv/workspace/ros2/velodyne/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'aiv'), ('GEMINI_CLI', '1'), ('JOURNAL_STREAM', '8:8597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/aiv/.nvm/versions/node/v24.13.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2310,unix/aiv:/tmp/.ICE-unix/2310'), ('INVOCATION_ID', '303785d5eafa42cfac1b6e96fb439e54'), ('GEMINI_CLI_NO_RELAUNCH', 'true'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_second_package:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dfd7bdac-8684-4c07-a194-c0a32fa505b0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ev_ws/ros2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ros2_study/install/my_second_package/lib/python3.10/site-packages:/home/aiv/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'code --wait'), ('CMAKE_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble')]), 'shell': False}
+[0.055484] (lidar_clustering) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CUDA object CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o\x1b[0m\n'}
+[0.099942] (-) TimerEvent: {}
+[0.200227] (-) TimerEvent: {}
+[0.300579] (-) TimerEvent: {}
+[0.361294] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.cpp:1:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.361463] (lidar_clustering) StderrLine: {'line': b'    1 | # \x1b[01;35m\x1b[K1\x1b[m\x1b[K "/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu"\n'}
+[0.361520] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.361655] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.361727] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.361777] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.361823] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.361869] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.361913] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.361956] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362000] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.362054] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362099] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362143] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.362186] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362229] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362272] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.362322] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362365] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362408] (lidar_clustering) StderrLine: {'line': b'    2 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KNO STL, NO CUB, NO Thrust - only cuda_runtime.h and C headers\n'}
+[0.362451] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362494] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:3:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362537] (lidar_clustering) StderrLine: {'line': b'    3 | //\x1b[01;35m\x1b[K \x1b[m\x1b[KThis avoids nvcc 11.5 + GCC 11 incompatibility with <functional>\n'}
+[0.362581] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362623] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:6:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362667] (lidar_clustering) StderrLine: {'line': b'    6 | \n'}
+[0.362710] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.362752] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:1:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.362796] (lidar_clustering) StderrLine: {'line': b'    1 | //\x1b[01;35m\x1b[K P\x1b[m\x1b[Kure CUDA kernels + C API wrappers\n'}
+[0.362840] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.368369] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:9:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.368444] (lidar_clustering) StderrLine: {'line': b'    9 | #e\x1b[01;35m\x1b[Knd\x1b[m\x1b[Kif\n'}
+[0.368498] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.368547] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:13:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.368596] (lidar_clustering) StderrLine: {'line': b'   13 | \n'}
+[0.368643] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.368690] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:16:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.368737] (lidar_clustering) StderrLine: {'line': b'   16 | vo\x1b[01;35m\x1b[Kid\x1b[m\x1b[K gpu_resources_destroy(GpuResourcesHandle h);\n'}
+[0.368881] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.368931] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:17:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.368979] (lidar_clustering) StderrLine: {'line': b'   17 | \n'}
+[0.369030] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.369677] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:20:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.369802] (lidar_clustering) StderrLine: {'line': b'   20 | \n'}
+[0.369854] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.369903] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:23:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.369988] (lidar_clustering) StderrLine: {'line': b'   23 |   \x1b[01;35m\x1b[KGp\x1b[m\x1b[KuResourcesHandle h, int n,\n'}
+[0.370111] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.370159] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:31:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370204] (lidar_clustering) StderrLine: {'line': b'   31 |   \x1b[01;35m\x1b[KGp\x1b[m\x1b[KuResourcesHandle h,\n'}
+[0.370250] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.370297] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:37:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370346] (lidar_clustering) StderrLine: {'line': b'   37 |   \x1b[01;35m\x1b[KGp\x1b[m\x1b[KuResourcesHandle h, int n,\n'}
+[0.370394] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.370442] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:44:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370489] (lidar_clustering) StderrLine: {'line': b'   44 |   \x1b[01;35m\x1b[KGp\x1b[m\x1b[KuResourcesHandle h, int n,\n'}
+[0.370535] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.370582] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:53:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370630] (lidar_clustering) StderrLine: {'line': b'   53 |   \x1b[01;35m\x1b[KGp\x1b[m\x1b[KuResourcesHandle h, int n,\n'}
+[0.370679] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.370725] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:60:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370773] (lidar_clustering) StderrLine: {'line': b'   60 | \n'}
+[0.370820] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.370867] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h:63:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.370913] (lidar_clustering) StderrLine: {'line': b'   63 | #e\x1b[01;35m\x1b[Knd\x1b[m\x1b[Kif\n'}
+[0.370960] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.371006] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:15:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.371283] (lidar_clustering) StderrLine: {'line': b'   15 |   \x1b[01;35m\x1b[Kfl\x1b[m\x1b[Koat* d_px;\n'}
+[0.371331] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.371457] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:16:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.371504] (lidar_clustering) StderrLine: {'line': b'   16 |   \x1b[01;35m\x1b[Kfl\x1b[m\x1b[Koat* d_py;\n'}
+[0.371551] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.371597] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:17:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.371644] (lidar_clustering) StderrLine: {'line': b'   17 |   \x1b[01;35m\x1b[Kfl\x1b[m\x1b[Koat* d_pz;\n'}
+[0.371690] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.371736] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:18:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.371783] (lidar_clustering) StderrLine: {'line': b'   18 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_cell_indices;\n'}
+[0.371829] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.371874] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:19:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.371920] (lidar_clustering) StderrLine: {'line': b'   19 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_sorted_indices;\n'}
+[0.371967] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372013] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:20:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372139] (lidar_clustering) StderrLine: {'line': b'   20 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_sorted_cells;\n'}
+[0.372280] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372325] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:21:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372368] (lidar_clustering) StderrLine: {'line': b'   21 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_cell_start;\n'}
+[0.372411] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372456] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:22:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372499] (lidar_clustering) StderrLine: {'line': b'   22 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_cell_end;\n'}
+[0.372542] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372585] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:23:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372628] (lidar_clustering) StderrLine: {'line': b'   23 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_neighbor_counts;\n'}
+[0.372671] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372715] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:24:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372758] (lidar_clustering) StderrLine: {'line': b'   24 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_is_core;\n'}
+[0.372801] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372844] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:25:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.372898] (lidar_clustering) StderrLine: {'line': b'   25 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_neighbor_offsets;\n'}
+[0.372941] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.372985] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:26:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373191] (lidar_clustering) StderrLine: {'line': b'   26 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* d_neighbor_list;\n'}
+[0.373266] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373293] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:27:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373316] (lidar_clustering) StderrLine: {'line': b'   27 |   \x1b[01;35m\x1b[Ksi\x1b[m\x1b[Kze_t max_points;\n'}
+[0.373337] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373358] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:28:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373379] (lidar_clustering) StderrLine: {'line': b'   28 |   \x1b[01;35m\x1b[Ksi\x1b[m\x1b[Kze_t max_cells;\n'}
+[0.373399] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373419] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:29:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373442] (lidar_clustering) StderrLine: {'line': b'   29 |   \x1b[01;35m\x1b[Ksi\x1b[m\x1b[Kze_t max_neighbors;\n'}
+[0.373461] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373482] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:30:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373503] (lidar_clustering) StderrLine: {'line': b'   30 | };\n'}
+[0.373523] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.373542] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:31:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373564] (lidar_clustering) StderrLine: {'line': b'   31 | \n'}
+[0.373583] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.373602] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:37:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373622] (lidar_clustering) StderrLine: {'line': b'   37 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt p = labels[i];\n'}
+[0.373641] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373661] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:70:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373681] (lidar_clustering) StderrLine: {'line': b'   70 |   \x1b[01;35m\x1b[K  \x1b[m\x1b[Kroot_j = small;\n'}
+[0.373701] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.373755] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:50:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373796] (lidar_clustering) StderrLine: {'line': b'   50 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt root_i = i;\n'}
+[0.373820] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.373841] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:107:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373864] (lidar_clustering) StderrLine: {'line': b'  107 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.373886] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.373908] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:75:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.373955] (lidar_clustering) StderrLine: {'line': b'   75 |   \x1b[01;35m\x1b[Kco\x1b[m\x1b[Knst float* px, const float* py, const float* pz,\n'}
+[0.373981] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374001] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:76:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374025] (lidar_clustering) StderrLine: {'line': b'   76 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt* cell_indices, int n,\n'}
+[0.374047] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374067] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:77:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374088] (lidar_clustering) StderrLine: {'line': b'   77 |   \x1b[01;35m\x1b[Kfl\x1b[m\x1b[Koat origin_x, float origin_y, float origin_z,\n'}
+[0.374108] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374128] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:78:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374149] (lidar_clustering) StderrLine: {'line': b'   78 |   \x1b[01;35m\x1b[Kfl\x1b[m\x1b[Koat inv_cell_size,\n'}
+[0.374169] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374189] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:79:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374209] (lidar_clustering) StderrLine: {'line': b'   79 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt grid_x, int grid_y, int grid_z)\n'}
+[0.374230] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374250] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:110:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374270] (lidar_clustering) StderrLine: {'line': b'  110 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.374291] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \n'}
+[0.374311] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:99:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374334] (lidar_clustering) StderrLine: {'line': b'   99 |   \x1b[01;35m\x1b[Kco\x1b[m\x1b[Knst int* cell_indices, int* cell_start, int* cell_end, int n)\n'}
+[0.374426] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.374482] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:124:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374503] (lidar_clustering) StderrLine: {'line': b'  124 | \n'}
+[0.374523] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.374541] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:114:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374561] (lidar_clustering) StderrLine: {'line': b'  114 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.374580] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374599] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:115:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374618] (lidar_clustering) StderrLine: {'line': b'  115 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* sorted_indices,\n'}
+[0.374637] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374656] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:116:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374674] (lidar_clustering) StderrLine: {'line': b'  116 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_indices_sorted,\n'}
+[0.374693] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374711] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:117:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374731] (lidar_clustering) StderrLine: {'line': b'  117 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_start, const int* cell_end,\n'}
+[0.374750] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374770] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:118:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374789] (lidar_clustering) StderrLine: {'line': b'  118 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K n, float eps_sq, int min_pts,\n'}
+[0.374807] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374825] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:119:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374844] (lidar_clustering) StderrLine: {'line': b'  119 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* neighbor_counts, int* is_core,\n'}
+[0.374862] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374880] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:120:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374898] (lidar_clustering) StderrLine: {'line': b'  120 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z)\n'}
+[0.374916] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.374934] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:201:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.374955] (lidar_clustering) StderrLine: {'line': b'  201 |   \x1b[01;35m\x1b[K   \x1b[m\x1b[K   int start = cell_start[ncell];\n'}
+[0.374976] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.374993] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:168:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375012] (lidar_clustering) StderrLine: {'line': b'  168 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.375034] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375053] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:169:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375071] (lidar_clustering) StderrLine: {'line': b'  169 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* sorted_indices,\n'}
+[0.375091] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375112] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:170:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375133] (lidar_clustering) StderrLine: {'line': b'  170 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_indices_sorted,\n'}
+[0.375153] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375173] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:171:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375193] (lidar_clustering) StderrLine: {'line': b'  171 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_start, const int* cell_end,\n'}
+[0.375212] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375232] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:172:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375251] (lidar_clustering) StderrLine: {'line': b'  172 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K n, float eps_sq,\n'}
+[0.375271] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375289] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:173:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375308] (lidar_clustering) StderrLine: {'line': b'  173 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* neighbor_offsets,\n'}
+[0.375327] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375346] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:174:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375373] (lidar_clustering) StderrLine: {'line': b'  174 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* neighbor_list,\n'}
+[0.375393] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375412] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:175:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375435] (lidar_clustering) StderrLine: {'line': b'  175 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z)\n'}
+[0.375454] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375475] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:252:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375496] (lidar_clustering) StderrLine: {'line': b'  252 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_neighbor_offsets, (max_points + 1) * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.375517] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375536] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:225:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375556] (lidar_clustering) StderrLine: {'line': b'  225 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(err != cudaSuccess) {\n'}
+[0.375575] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375594] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:226:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375614] (lidar_clustering) StderrLine: {'line': b'  226 |   \x1b[01;35m\x1b[K  f\x1b[m\x1b[Kprintf(stderr, "CUDA error: %s\\n", cudaGetErrorString(err));\n'}
+[0.375636] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.375655] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:227:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375675] (lidar_clustering) StderrLine: {'line': b'  227 |   \x1b[01;35m\x1b[K  r\x1b[m\x1b[Keturn -1;\n'}
+[0.375694] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.375714] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:228:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375734] (lidar_clustering) StderrLine: {'line': b'  228 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.375753] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.375772] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:229:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375791] (lidar_clustering) StderrLine: {'line': b'  229 |   \x1b[01;35m\x1b[Kret\x1b[m\x1b[Kurn 0;\n'}
+[0.375812] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.375832] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:230:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375852] (lidar_clustering) StderrLine: {'line': b'  230 | }\n'}
+[0.375871] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.375891] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:231:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375910] (lidar_clustering) StderrLine: {'line': b'  231 | \n'}
+[0.375930] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.375949] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:233:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.375969] (lidar_clustering) StderrLine: {'line': b'  233 |   \x1b[01;35m\x1b[Ksiz\x1b[m\x1b[Ke_t max_points, size_t max_cells, size_t max_neighbors)\n'}
+[0.375988] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376009] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:234:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376045] (lidar_clustering) StderrLine: {'line': b'  234 | {\n'}
+[0.376063] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.376081] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:235:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376099] (lidar_clustering) StderrLine: {'line': b'  235 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResources* r = (GpuResources*)calloc(1, sizeof(GpuResources));\n'}
+[0.376120] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376140] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:236:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376160] (lidar_clustering) StderrLine: {'line': b'  236 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!r) return NULL;\n'}
+[0.376180] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376201] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:237:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376221] (lidar_clustering) StderrLine: {'line': b'  237 | \n'}
+[0.376240] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.376259] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:239:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376279] (lidar_clustering) StderrLine: {'line': b'  239 |   \x1b[01;35m\x1b[Kr->\x1b[m\x1b[Kmax_cells = max_cells;\n'}
+[0.376298] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376318] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:240:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376337] (lidar_clustering) StderrLine: {'line': b'  240 |   \x1b[01;35m\x1b[Kr->\x1b[m\x1b[Kmax_neighbors = max_neighbors;\n'}
+[0.376356] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376375] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:241:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376399] (lidar_clustering) StderrLine: {'line': b'  241 | \n'}
+[0.376418] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.376439] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:243:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376459] (lidar_clustering) StderrLine: {'line': b'  243 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_py, max_points * sizeof(float)) != cudaSuccess) goto fail;\n'}
+[0.376479] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376498] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:244:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376518] (lidar_clustering) StderrLine: {'line': b'  244 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_pz, max_points * sizeof(float)) != cudaSuccess) goto fail;\n'}
+[0.376538] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376557] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:245:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376579] (lidar_clustering) StderrLine: {'line': b'  245 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_cell_indices, max_points * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376599] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376620] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:246:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376641] (lidar_clustering) StderrLine: {'line': b'  246 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_sorted_indices, max_points * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376660] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376679] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:247:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376700] (lidar_clustering) StderrLine: {'line': b'  247 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_sorted_cells, max_points * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376721] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376740] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:248:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376759] (lidar_clustering) StderrLine: {'line': b'  248 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_cell_start, max_cells * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376780] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376799] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:249:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376819] (lidar_clustering) StderrLine: {'line': b'  249 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_cell_end, max_cells * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376838] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376858] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:250:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376878] (lidar_clustering) StderrLine: {'line': b'  250 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_neighbor_counts, max_points * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376900] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376918] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:251:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376938] (lidar_clustering) StderrLine: {'line': b'  251 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_is_core, max_points * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.376957] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.376976] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:252:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.376995] (lidar_clustering) StderrLine: {'line': b'  252 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_neighbor_offsets, (max_points + 1) * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.377013] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377036] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:253:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377055] (lidar_clustering) StderrLine: {'line': b'  253 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(cudaMalloc(&r->d_neighbor_list, max_neighbors * sizeof(int)) != cudaSuccess) goto fail;\n'}
+[0.377073] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377092] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:254:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377111] (lidar_clustering) StderrLine: {'line': b'  254 | \n'}
+[0.377129] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.377148] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:256:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377167] (lidar_clustering) StderrLine: {'line': b'  256 | \n'}
+[0.377186] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.377205] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:258:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377225] (lidar_clustering) StderrLine: {'line': b'  258 |   \x1b[01;35m\x1b[Kgpu\x1b[m\x1b[K_resources_destroy(r);\n'}
+[0.377244] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377264] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:259:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377284] (lidar_clustering) StderrLine: {'line': b'  259 |   \x1b[01;35m\x1b[Kret\x1b[m\x1b[Kurn NULL;\n'}
+[0.377303] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377321] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:260:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377340] (lidar_clustering) StderrLine: {'line': b'  260 | }\n'}
+[0.377358] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.377377] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:261:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377396] (lidar_clustering) StderrLine: {'line': b'  261 | \n'}
+[0.377414] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.377433] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:263:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377451] (lidar_clustering) StderrLine: {'line': b'  263 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h) return;\n'}
+[0.377470] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377488] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:264:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377507] (lidar_clustering) StderrLine: {'line': b'  264 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_px);\n'}
+[0.377527] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377546] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:265:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377567] (lidar_clustering) StderrLine: {'line': b'  265 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_py);\n'}
+[0.377586] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377603] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:266:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377622] (lidar_clustering) StderrLine: {'line': b'  266 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_pz);\n'}
+[0.377640] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377658] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:267:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377677] (lidar_clustering) StderrLine: {'line': b'  267 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_cell_indices);\n'}
+[0.377695] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377714] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:268:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377732] (lidar_clustering) StderrLine: {'line': b'  268 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_sorted_indices);\n'}
+[0.377751] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377770] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:269:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377788] (lidar_clustering) StderrLine: {'line': b'  269 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_sorted_cells);\n'}
+[0.377807] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377825] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:270:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377844] (lidar_clustering) StderrLine: {'line': b'  270 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_cell_start);\n'}
+[0.377864] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377882] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:271:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377900] (lidar_clustering) StderrLine: {'line': b'  271 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_cell_end);\n'}
+[0.377918] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377937] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:272:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.377955] (lidar_clustering) StderrLine: {'line': b'  272 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_neighbor_counts);\n'}
+[0.377972] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.377990] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:273:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378009] (lidar_clustering) StderrLine: {'line': b'  273 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_is_core);\n'}
+[0.378030] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378050] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:274:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378069] (lidar_clustering) StderrLine: {'line': b'  274 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_neighbor_offsets);\n'}
+[0.378088] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378105] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:275:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378123] (lidar_clustering) StderrLine: {'line': b'  275 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_neighbor_list);\n'}
+[0.378143] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378162] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:276:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378182] (lidar_clustering) StderrLine: {'line': b'  276 |   \x1b[01;35m\x1b[Kfre\x1b[m\x1b[Ke(h);\n'}
+[0.378201] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378221] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:277:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378244] (lidar_clustering) StderrLine: {'line': b'  277 | }\n'}
+[0.378262] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.378280] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:278:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378299] (lidar_clustering) StderrLine: {'line': b'  278 | \n'}
+[0.378317] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.378336] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:280:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378355] (lidar_clustering) StderrLine: {'line': b'  280 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h,\n'}
+[0.378374] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378392] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:281:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378413] (lidar_clustering) StderrLine: {'line': b'  281 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* hx, const float* hy, const float* hz, int n)\n'}
+[0.378431] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378452] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:282:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378471] (lidar_clustering) StderrLine: {'line': b'  282 | {\n'}
+[0.378490] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.378508] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:283:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378527] (lidar_clustering) StderrLine: {'line': b'  283 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.378545] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378564] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:284:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378585] (lidar_clustering) StderrLine: {'line': b'  284 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemcpy(h->d_px, hx, n * sizeof(float), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.378604] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378622] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:285:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378641] (lidar_clustering) StderrLine: {'line': b'  285 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemcpy(h->d_py, hy, n * sizeof(float), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.378660] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378678] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:286:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378696] (lidar_clustering) StderrLine: {'line': b'  286 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemcpy(h->d_pz, hz, n * sizeof(float), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.378714] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378733] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:287:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378752] (lidar_clustering) StderrLine: {'line': b'  287 |   \x1b[01;35m\x1b[Kret\x1b[m\x1b[Kurn 0;\n'}
+[0.378771] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378789] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:288:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378809] (lidar_clustering) StderrLine: {'line': b'  288 | }\n'}
+[0.378827] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.378845] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:289:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378864] (lidar_clustering) StderrLine: {'line': b'  289 | \n'}
+[0.378882] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.378901] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:291:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378919] (lidar_clustering) StderrLine: {'line': b'  291 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h, int n,\n'}
+[0.378939] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.378957] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:292:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.378975] (lidar_clustering) StderrLine: {'line': b'  292 |   \x1b[01;35m\x1b[Kflo\x1b[m\x1b[Kat origin_x, float origin_y, float origin_z,\n'}
+[0.378994] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379011] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:293:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379034] (lidar_clustering) StderrLine: {'line': b'  293 |   \x1b[01;35m\x1b[Kflo\x1b[m\x1b[Kat inv_cell_size,\n'}
+[0.379056] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379075] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:294:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379093] (lidar_clustering) StderrLine: {'line': b'  294 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z,\n'}
+[0.379112] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379130] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:295:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379150] (lidar_clustering) StderrLine: {'line': b'  295 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* h_cell_indices_out)\n'}
+[0.379170] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379189] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:296:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379211] (lidar_clustering) StderrLine: {'line': b'  296 | {\n'}
+[0.379229] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379249] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:297:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379268] (lidar_clustering) StderrLine: {'line': b'  297 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.379287] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379306] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:298:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379325] (lidar_clustering) StderrLine: {'line': b'  298 | \n'}
+[0.379345] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379364] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:300:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379383] (lidar_clustering) StderrLine: {'line': b'  300 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_dim = (n + block_size - 1) / block_size;\n'}
+[0.379403] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379422] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:301:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379440] (lidar_clustering) StderrLine: {'line': b'  301 | \n'}
+[0.379460] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379480] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:303:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379499] (lidar_clustering) StderrLine: {'line': b'  303 |   \x1b[01;35m\x1b[K  h\x1b[m\x1b[K->d_px, h->d_py, h->d_pz,\n'}
+[0.379519] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.379538] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:309:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379558] (lidar_clustering) StderrLine: {'line': b'  309 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaDeviceSynchronize())) return -1;\n'}
+[0.379579] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379598] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:310:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379618] (lidar_clustering) StderrLine: {'line': b'  310 | \n'}
+[0.379640] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379659] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:312:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379680] (lidar_clustering) StderrLine: {'line': b'  312 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyDeviceToHost))) return -1;\n'}
+[0.379700] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.379720] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:313:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379739] (lidar_clustering) StderrLine: {'line': b'  313 | \n'}
+[0.379759] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379779] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:315:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379798] (lidar_clustering) StderrLine: {'line': b'  315 | }\n'}
+[0.379818] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379838] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:316:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379859] (lidar_clustering) StderrLine: {'line': b'  316 | \n'}
+[0.379878] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.379898] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:318:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379918] (lidar_clustering) StderrLine: {'line': b'  318 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h,\n'}
+[0.379938] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.379958] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:319:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.379980] (lidar_clustering) StderrLine: {'line': b'  319 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* h_sorted_indices, const int* h_sorted_cells,\n'}
+[0.379999] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380017] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:320:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380040] (lidar_clustering) StderrLine: {'line': b'  320 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K n, size_t num_cells)\n'}
+[0.380059] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380077] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:321:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380096] (lidar_clustering) StderrLine: {'line': b'  321 | {\n'}
+[0.380114] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380145] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:322:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380167] (lidar_clustering) StderrLine: {'line': b'  322 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.380187] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380207] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:323:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380230] (lidar_clustering) StderrLine: {'line': b'  323 | \n'}
+[0.380249] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380270] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:325:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380289] (lidar_clustering) StderrLine: {'line': b'  325 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.380308] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.380329] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:326:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380350] (lidar_clustering) StderrLine: {'line': b'  326 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemcpy(h->d_sorted_cells, h_sorted_cells,\n'}
+[0.380369] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380388] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:327:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380408] (lidar_clustering) StderrLine: {'line': b'  327 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.380427] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.380446] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:328:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380465] (lidar_clustering) StderrLine: {'line': b'  328 | \n'}
+[0.380485] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380504] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:330:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380523] (lidar_clustering) StderrLine: {'line': b'  330 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemset(h->d_cell_end, 0, num_cells * sizeof(int)))) return -1;\n'}
+[0.380543] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380571] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:331:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380591] (lidar_clustering) StderrLine: {'line': b'  331 | \n'}
+[0.380611] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380629] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:333:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380654] (lidar_clustering) StderrLine: {'line': b'  333 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_dim = (n + block_size - 1) / block_size;\n'}
+[0.380677] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380697] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:334:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380717] (lidar_clustering) StderrLine: {'line': b'  334 | \n'}
+[0.380737] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380756] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:336:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380777] (lidar_clustering) StderrLine: {'line': b'  336 |   \x1b[01;35m\x1b[K  h\x1b[m\x1b[K->d_sorted_cells, h->d_cell_start, h->d_cell_end, n);\n'}
+[0.380798] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.380817] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:339:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380837] (lidar_clustering) StderrLine: {'line': b'  339 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaDeviceSynchronize())) return -1;\n'}
+[0.380856] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.380875] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:340:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380896] (lidar_clustering) StderrLine: {'line': b'  340 | \n'}
+[0.380916] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380934] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:342:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.380957] (lidar_clustering) StderrLine: {'line': b'  342 | }\n'}
+[0.380977] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.380995] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:343:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381015] (lidar_clustering) StderrLine: {'line': b'  343 | \n'}
+[0.381038] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381058] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:345:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381076] (lidar_clustering) StderrLine: {'line': b'  345 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h, int n,\n'}
+[0.381097] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381117] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:346:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381136] (lidar_clustering) StderrLine: {'line': b'  346 |   \x1b[01;35m\x1b[Kflo\x1b[m\x1b[Kat eps_sq, int min_pts,\n'}
+[0.381155] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381175] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:347:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381194] (lidar_clustering) StderrLine: {'line': b'  347 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z,\n'}
+[0.381216] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381236] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:348:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381257] (lidar_clustering) StderrLine: {'line': b'  348 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* h_neighbor_counts_out, int* h_is_core_out)\n'}
+[0.381276] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381296] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:349:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381316] (lidar_clustering) StderrLine: {'line': b'  349 | {\n'}
+[0.381334] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381353] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:350:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381373] (lidar_clustering) StderrLine: {'line': b'  350 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.381392] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381411] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:351:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381430] (lidar_clustering) StderrLine: {'line': b'  351 | \n'}
+[0.381449] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381468] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:353:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381488] (lidar_clustering) StderrLine: {'line': b'  353 | \n'}
+[0.381508] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381528] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:355:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381548] (lidar_clustering) StderrLine: {'line': b'  355 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_dim = (n + block_size - 1) / block_size;\n'}
+[0.381567] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381587] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:356:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381607] (lidar_clustering) StderrLine: {'line': b'  356 | \n'}
+[0.381626] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381645] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:358:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381663] (lidar_clustering) StderrLine: {'line': b'  358 |   \x1b[01;35m\x1b[K  h\x1b[m\x1b[K->d_px, h->d_py, h->d_pz,\n'}
+[0.381682] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.381701] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:367:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381720] (lidar_clustering) StderrLine: {'line': b'  367 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaDeviceSynchronize())) return -1;\n'}
+[0.381743] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381763] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:368:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381782] (lidar_clustering) StderrLine: {'line': b'  368 | \n'}
+[0.381801] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.381821] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:370:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381840] (lidar_clustering) StderrLine: {'line': b'  370 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyDeviceToHost))) return -1;\n'}
+[0.381859] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.381877] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:371:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381897] (lidar_clustering) StderrLine: {'line': b'  371 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMemcpy(h_is_core_out, h->d_is_core,\n'}
+[0.381917] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.381935] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:372:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.381954] (lidar_clustering) StderrLine: {'line': b'  372 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyDeviceToHost))) return -1;\n'}
+[0.381974] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.381993] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:373:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382012] (lidar_clustering) StderrLine: {'line': b'  373 | \n'}
+[0.382035] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382054] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:375:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382073] (lidar_clustering) StderrLine: {'line': b'  375 | }\n'}
+[0.382092] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382111] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:376:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382131] (lidar_clustering) StderrLine: {'line': b'  376 | \n'}
+[0.382150] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382169] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:378:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382188] (lidar_clustering) StderrLine: {'line': b'  378 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h, int n,\n'}
+[0.382207] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382227] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:379:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382249] (lidar_clustering) StderrLine: {'line': b'  379 |   \x1b[01;35m\x1b[Kflo\x1b[m\x1b[Kat eps_sq,\n'}
+[0.382270] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382288] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:380:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382307] (lidar_clustering) StderrLine: {'line': b'  380 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z,\n'}
+[0.382326] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382345] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:381:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382364] (lidar_clustering) StderrLine: {'line': b'  381 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* h_neighbor_offsets,\n'}
+[0.382383] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382402] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:382:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382420] (lidar_clustering) StderrLine: {'line': b'  382 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* h_neighbor_list_out, size_t total_neighbors)\n'}
+[0.382439] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382458] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:383:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382476] (lidar_clustering) StderrLine: {'line': b'  383 | {\n'}
+[0.382495] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382513] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:384:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382532] (lidar_clustering) StderrLine: {'line': b'  384 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.382552] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382571] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:385:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382589] (lidar_clustering) StderrLine: {'line': b'  385 | \n'}
+[0.382608] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382628] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:387:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382647] (lidar_clustering) StderrLine: {'line': b'  387 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyHostToDevice))) return -1;\n'}
+[0.382666] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.382686] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:388:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382707] (lidar_clustering) StderrLine: {'line': b'  388 | \n'}
+[0.382726] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382745] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:390:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382766] (lidar_clustering) StderrLine: {'line': b'  390 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_dim = (n + block_size - 1) / block_size;\n'}
+[0.382789] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382809] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:391:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382828] (lidar_clustering) StderrLine: {'line': b'  391 | \n'}
+[0.382849] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.382868] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:393:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382891] (lidar_clustering) StderrLine: {'line': b'  393 |   \x1b[01;35m\x1b[K  h\x1b[m\x1b[K->d_px, h->d_py, h->d_pz,\n'}
+[0.382910] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.382929] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:403:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.382950] (lidar_clustering) StderrLine: {'line': b'  403 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaDeviceSynchronize())) return -1;\n'}
+[0.382970] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.382988] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:404:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383010] (lidar_clustering) StderrLine: {'line': b'  404 | \n'}
+[0.383035] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383056] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:406:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383075] (lidar_clustering) StderrLine: {'line': b'  406 |   \x1b[01;35m\x1b[K  i\x1b[m\x1b[Kf (check_cuda(cudaMemcpy(h_neighbor_list_out, h->d_neighbor_list,\n'}
+[0.383095] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.383115] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:407:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383134] (lidar_clustering) StderrLine: {'line': b'  407 |   \x1b[01;35m\x1b[K   \x1b[m\x1b[K total_neighbors * sizeof(int), cudaMemcpyDeviceToHost))) return -1;\n'}
+[0.383163] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383185] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:408:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383207] (lidar_clustering) StderrLine: {'line': b'  408 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.383228] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383254] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:409:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383275] (lidar_clustering) StderrLine: {'line': b'  409 | \n'}
+[0.383295] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383315] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:411:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383342] (lidar_clustering) StderrLine: {'line': b'  411 | }\n'}
+[0.383363] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383383] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:412:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383402] (lidar_clustering) StderrLine: {'line': b'  412 | \n'}
+[0.383422] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383441] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:414:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383462] (lidar_clustering) StderrLine: {'line': b'  414 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h) return -1;\n'}
+[0.383482] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383506] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:415:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383527] (lidar_clustering) StderrLine: {'line': b'  415 |   \x1b[01;35m\x1b[Kcud\x1b[m\x1b[KaFree(h->d_neighbor_list);\n'}
+[0.383547] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383570] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:416:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383589] (lidar_clustering) StderrLine: {'line': b'  416 |   \x1b[01;35m\x1b[Kh->\x1b[m\x1b[Kd_neighbor_list = NULL;\n'}
+[0.383609] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383628] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:417:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383648] (lidar_clustering) StderrLine: {'line': b'  417 |   \x1b[01;35m\x1b[Kh->\x1b[m\x1b[Kmax_neighbors = new_max_neighbors;\n'}
+[0.383667] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383686] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:418:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383706] (lidar_clustering) StderrLine: {'line': b'  418 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaMalloc(&h->d_neighbor_list,\n'}
+[0.383726] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383746] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:419:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383766] (lidar_clustering) StderrLine: {'line': b'  419 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[Kew_max_neighbors * sizeof(int)))) return -1;\n'}
+[0.383791] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.383811] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:420:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383835] (lidar_clustering) StderrLine: {'line': b'  420 |   \x1b[01;35m\x1b[Kret\x1b[m\x1b[Kurn 0;\n'}
+[0.383856] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.383875] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:421:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383898] (lidar_clustering) StderrLine: {'line': b'  421 | }\n'}
+[0.383922] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.383943] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:422:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.383964] (lidar_clustering) StderrLine: {'line': b'  422 | \n'}
+[0.383984] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.384007] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:434:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384030] (lidar_clustering) StderrLine: {'line': b'  434 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* labels,\n'}
+[0.384049] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384067] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:429:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384086] (lidar_clustering) StderrLine: {'line': b'  429 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.384105] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384124] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:430:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384143] (lidar_clustering) StderrLine: {'line': b'  430 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* sorted_indices,\n'}
+[0.384164] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384184] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:431:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384204] (lidar_clustering) StderrLine: {'line': b'  431 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_indices_sorted,\n'}
+[0.384224] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384246] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:432:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384265] (lidar_clustering) StderrLine: {'line': b'  432 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_start, const int* cell_end,\n'}
+[0.384289] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384308] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:433:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384331] (lidar_clustering) StderrLine: {'line': b'  433 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K n, float eps_sq,\n'}
+[0.384351] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384371] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:434:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384390] (lidar_clustering) StderrLine: {'line': b'  434 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* labels,\n'}
+[0.384413] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384432] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:435:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384453] (lidar_clustering) StderrLine: {'line': b'  435 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* is_core,\n'}
+[0.384473] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384493] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:436:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384514] (lidar_clustering) StderrLine: {'line': b'  436 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z)\n'}
+[0.384533] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384552] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:513:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384572] (lidar_clustering) StderrLine: {'line': b'  513 |   \x1b[01;35m\x1b[K  g\x1b[m\x1b[Krid_x, grid_y, grid_z);\n'}
+[0.384594] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.384613] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:488:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384632] (lidar_clustering) StderrLine: {'line': b'  488 |   \x1b[01;35m\x1b[KGpu\x1b[m\x1b[KResourcesHandle h, int n,\n'}
+[0.384653] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384673] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:489:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384692] (lidar_clustering) StderrLine: {'line': b'  489 |   \x1b[01;35m\x1b[Kflo\x1b[m\x1b[Kat eps_sq,\n'}
+[0.384711] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384731] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:490:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384751] (lidar_clustering) StderrLine: {'line': b'  490 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_x, int grid_y, int grid_z,\n'}
+[0.384773] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384792] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:491:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384812] (lidar_clustering) StderrLine: {'line': b'  491 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K* h_labels_out)\n'}
+[0.384832] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384852] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:492:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384871] (lidar_clustering) StderrLine: {'line': b'  492 | {\n'}
+[0.384890] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.384910] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:493:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384929] (lidar_clustering) StderrLine: {'line': b'  493 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(!h || n <= 0) return -1;\n'}
+[0.384949] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.384967] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:494:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.384987] (lidar_clustering) StderrLine: {'line': b'  494 | \n'}
+[0.385005] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385025] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:497:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385046] (lidar_clustering) StderrLine: {'line': b'  497 | \n'}
+[0.385064] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385083] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:500:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385101] (lidar_clustering) StderrLine: {'line': b'  500 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K grid_dim = (n + block_size - 1) / block_size;\n'}
+[0.385123] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.385144] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:501:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385163] (lidar_clustering) StderrLine: {'line': b'  501 |   \x1b[01;35m\x1b[Kker\x1b[m\x1b[Knel_init_labels<<<grid_dim, block_size>>>(d_labels, n);\n'}
+[0.385184] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.385204] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:502:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385224] (lidar_clustering) StderrLine: {'line': b'  502 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaGetLastError())) return -1;\n'}
+[0.385244] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.385264] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:503:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385284] (lidar_clustering) StderrLine: {'line': b'  503 | \n'}
+[0.385304] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385324] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:506:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385347] (lidar_clustering) StderrLine: {'line': b'  506 |   \x1b[01;35m\x1b[K  h\x1b[m\x1b[K->d_px, h->d_py, h->d_pz,\n'}
+[0.385367] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.385387] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:516:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385406] (lidar_clustering) StderrLine: {'line': b'  516 |   \x1b[01;35m\x1b[Kif \x1b[m\x1b[K(check_cuda(cudaDeviceSynchronize())) return -1;\n'}
+[0.385426] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.385447] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:517:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385468] (lidar_clustering) StderrLine: {'line': b'  517 | \n'}
+[0.385487] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385507] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:520:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385530] (lidar_clustering) StderrLine: {'line': b'  520 |   \x1b[01;35m\x1b[K  n\x1b[m\x1b[K * sizeof(int), cudaMemcpyDeviceToHost))) return -1;\n'}
+[0.385549] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K \x1b[01;35m\x1b[K~\x1b[m\x1b[K\n'}
+[0.385569] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:521:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385593] (lidar_clustering) StderrLine: {'line': b'  521 | \n'}
+[0.385613] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385633] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:523:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385654] (lidar_clustering) StderrLine: {'line': b'  523 | }\n'}
+[0.385674] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K  \n'}
+[0.385694] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:525:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385716] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:4:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385737] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.385758] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:75:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385778] (lidar_clustering) StderrLine: {'line': b'   75 |   \x1b[01;35m\x1b[Kco\x1b[m\x1b[Knst float* px, const float* py, const float* pz,\n'}
+[0.385799] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.385820] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.385840] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:81:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385860] (lidar_clustering) StderrLine: {'line': b'   81 |   \x1b[01;35m\x1b[Kin\x1b[m\x1b[Kt idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.385880] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.385901] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.385920] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:97:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.385941] (lidar_clustering) StderrLine: {'line': b'   97 | \n'}
+[0.385962] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.385981] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386001] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386023] (lidar_clustering) StderrLine: {'line': b'    2 | #p\x1b[01;35m\x1b[Kra\x1b[m\x1b[Kgma GCC diagnostic ignored "-Wunused-function"\n'}
+[0.386044] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.386063] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386084] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:99:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386102] (lidar_clustering) StderrLine: {'line': b'   99 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst int* cell_indices, int* cell_start, int* cell_end, int n)\n'}
+[0.386121] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386151] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386171] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:101:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386190] (lidar_clustering) StderrLine: {'line': b'  101 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.386210] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386229] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386248] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:112:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386268] (lidar_clustering) StderrLine: {'line': b'  112 | \n'}
+[0.386288] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.386309] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386330] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386352] (lidar_clustering) StderrLine: {'line': b'    2 | #p\x1b[01;35m\x1b[Krag\x1b[m\x1b[Kma GCC diagnostic ignored "-Wunused-function"\n'}
+[0.386373] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386395] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386415] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:114:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386434] (lidar_clustering) StderrLine: {'line': b'  114 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.386455] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386475] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386495] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:122:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386515] (lidar_clustering) StderrLine: {'line': b'  122 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K sorted_idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.386536] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386555] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386578] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:166:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386601] (lidar_clustering) StderrLine: {'line': b'  166 | \n'}
+[0.386620] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.386641] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386661] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386681] (lidar_clustering) StderrLine: {'line': b'    2 | #p\x1b[01;35m\x1b[Krag\x1b[m\x1b[Kma GCC diagnostic ignored "-Wunused-function"\n'}
+[0.386700] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386720] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386740] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:168:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386759] (lidar_clustering) StderrLine: {'line': b'  168 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.386780] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386800] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386820] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:177:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386840] (lidar_clustering) StderrLine: {'line': b'  177 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K sorted_idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.386860] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.386880] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386899] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:219:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386919] (lidar_clustering) StderrLine: {'line': b'  219 | \n'}
+[0.386939] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.386958] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.386980] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.386999] (lidar_clustering) StderrLine: {'line': b'    2 | #p\x1b[01;35m\x1b[Krag\x1b[m\x1b[Kma GCC diagnostic ignored "-Wunused-function"\n'}
+[0.387017] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.387038] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387058] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:424:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387076] (lidar_clustering) StderrLine: {'line': b'  424 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.387096] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.387123] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387143] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:427:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387164] (lidar_clustering) StderrLine: {'line': b'  427 | \n'}
+[0.387184] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.387204] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387225] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/tmp/tmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387245] (lidar_clustering) StderrLine: {'line': b'    2 | #p\x1b[01;35m\x1b[Krag\x1b[m\x1b[Kma GCC diagnostic ignored "-Wunused-function"\n'}
+[0.387265] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.387286] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387309] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:429:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387331] (lidar_clustering) StderrLine: {'line': b'  429 |   \x1b[01;35m\x1b[Kcon\x1b[m\x1b[Kst float* px, const float* py, const float* pz,\n'}
+[0.387351] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.387372] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387393] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:438:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387414] (lidar_clustering) StderrLine: {'line': b'  438 |   \x1b[01;35m\x1b[Kint\x1b[m\x1b[K sorted_idx = blockIdx.x * blockDim.x + threadIdx.x;\n'}
+[0.387439] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.387459] (lidar_clustering) StderrLine: {'line': b'In file included from \x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:1\x1b[m\x1b[K:\n'}
+[0.387480] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[K/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu:485:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.387501] (lidar_clustering) StderrLine: {'line': b'  485 | \n'}
+[0.387521] (lidar_clustering) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.387541] (lidar_clustering) StderrLine: {'line': b'\x1b[01m\x1b[Ktmpxft_000037bb_00000000-6_dbscan_gpu.cudafe1.stub.c:2:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstyle of line directive is a GCC extension\n'}
+[0.400669] (-) TimerEvent: {}
+[0.453259] (lidar_clustering) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CUDA static library libdbscan_gpu_kernels.a\x1b[0m\n'}
+[0.477869] (lidar_clustering) StdoutLine: {'line': b'[ 28%] Built target dbscan_gpu_kernels\n'}
+[0.497473] (lidar_clustering) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o\x1b[0m\n'}
+[0.500774] (-) TimerEvent: {}
+[0.601041] (-) TimerEvent: {}
+[0.701357] (-) TimerEvent: {}
+[0.741664] (lidar_clustering) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CUDA device code CMakeFiles/clustering_component.dir/cmake_device_link.o\x1b[0m\n'}
+[0.757159] (lidar_clustering) StderrLine: {'line': b"nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libdl.a' when searching for -ldl\n"}
+[0.759879] (lidar_clustering) StderrLine: {'line': b"nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/librt.a' when searching for -lrt\n"}
+[0.759955] (lidar_clustering) StderrLine: {'line': b"nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libpthread.a' when searching for -lpthread\n"}
+[0.795902] (lidar_clustering) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libclustering_component.so\x1b[0m\n'}
+[0.801424] (-) TimerEvent: {}
+[0.901785] (-) TimerEvent: {}
+[1.002140] (-) TimerEvent: {}
+[1.029742] (lidar_clustering) StdoutLine: {'line': b'[100%] Built target clustering_component\n'}
+[1.037524] (lidar_clustering) CommandEnded: {'returncode': 0}
+[1.038426] (lidar_clustering) JobProgress: {'identifier': 'lidar_clustering', 'progress': 'install'}
+[1.045988] (lidar_clustering) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering'], 'cwd': '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aiv'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/lib:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp/lib:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2/install/patchworkpp/lib:/home/aiv/ros2_study/install/my_first_package_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_serial/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_util/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aiv'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/aiv/.nvm/versions/node/v24.13.0/bin'), ('NVM_INC', '/home/aiv/.nvm/versions/node/v24.13.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2075'), ('SYSTEMD_EXEC_PID', '2338'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3200'), ('NVM_DIR', '/home/aiv/.nvm'), ('COLCON_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install:/home/aiv/ev_ws/ros2/install:/home/aiv/ros2_study/install:/home/aiv/workspace/ros2/erp42_ros/install:/home/aiv/workspace/ros2/t870_ros/install:/home/aiv/workspace/ros2/erp42_racing_ros/install:/home/aiv/workspace/ros2/velodyne/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'aiv'), ('GEMINI_CLI', '1'), ('JOURNAL_STREAM', '8:8597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/aiv/.nvm/versions/node/v24.13.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2310,unix/aiv:/tmp/.ICE-unix/2310'), ('INVOCATION_ID', '303785d5eafa42cfac1b6e96fb439e54'), ('GEMINI_CLI_NO_RELAUNCH', 'true'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_second_package:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dfd7bdac-8684-4c07-a194-c0a32fa505b0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ev_ws/ros2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ros2_study/install/my_second_package/lib/python3.10/site-packages:/home/aiv/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'code --wait'), ('CMAKE_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble')]), 'shell': False}
+[1.051496] (lidar_clustering) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.051851] (lidar_clustering) StdoutLine: {'line': b'-- Installing: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib/libclustering_component.so\n'}
+[1.055921] (lidar_clustering) StdoutLine: {'line': b'-- Set runtime path of "/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib/libclustering_component.so" to ""\n'}
+[1.056047] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include\n'}
+[1.056149] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering\n'}
+[1.056200] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan_gpu.hpp\n'}
+[1.056269] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/clustering_component.hpp\n'}
+[1.056315] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan.hpp\n'}
+[1.056362] (lidar_clustering) StdoutLine: {'line': b'-- Installing: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/dbscan_gpu_kernels.h\n'}
+[1.056410] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/include/lidar_clustering/nanoflann.hpp\n'}
+[1.056457] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/config\n'}
+[1.056504] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/config/clustering_params.yaml\n'}
+[1.056552] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/library_path.sh\n'}
+[1.056599] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/library_path.dsv\n'}
+[1.056646] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/package_run_dependencies/lidar_clustering\n'}
+[1.056693] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/parent_prefix_path/lidar_clustering\n'}
+[1.056740] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/ament_prefix_path.sh\n'}
+[1.056787] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/ament_prefix_path.dsv\n'}
+[1.056834] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/path.sh\n'}
+[1.056918] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/environment/path.dsv\n'}
+[1.056986] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.bash\n'}
+[1.057082] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.sh\n'}
+[1.057208] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.zsh\n'}
+[1.057258] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/local_setup.dsv\n'}
+[1.057306] (lidar_clustering) StdoutLine: {'line': b'-- Installing: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/package.dsv\n'}
+[1.057353] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/packages/lidar_clustering\n'}
+[1.057400] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/ament_index/resource_index/rclcpp_components/lidar_clustering\n'}
+[1.057447] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.057493] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.057540] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.057587] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/lidar_clusteringConfig.cmake\n'}
+[1.057635] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/cmake/lidar_clusteringConfig-version.cmake\n'}
+[1.057708] (lidar_clustering) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/share/lidar_clustering/package.xml\n'}
+[1.058002] (lidar_clustering) CommandEnded: {'returncode': 0}
+[1.069848] (lidar_clustering) JobEnded: {'identifier': 'lidar_clustering', 'rc': 0}
+[1.106383] (-) TimerEvent: {}
+[1.106447] (-) EventReactorShutdown: {}
