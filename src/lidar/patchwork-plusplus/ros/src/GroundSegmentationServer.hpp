@@ -38,7 +38,7 @@ class GroundSegmentationServer : public rclcpp::Node {
   std::unique_ptr<patchwork::PatchWorkpp> Patchworkpp_;
   
   /// base_frame_ default : "base_link" 
-  std::string base_frame_{"base_link"};
+  std::string frame_id_{"velodyne"};
 };
 
 }  // namespace patchworkpp_ros

@@ -1,7 +1,7 @@
 patchworkpp_node:
   ros__parameters:
     # base frame id
-    base_frame: "velodyne"
+    frame_id: "velodyne"
 
     # 센서 지면 높이 (미터)
     sensor_height: 1.88
@@ -13,7 +13,7 @@ patchworkpp_node:
     num_lpr: 20
 
     # 각 패치에서 지면으로 추정하기 위한 최소 포인트 수
-    num_min_pts: 0
+    num_min_pts: 10
 
     # 초기 시드 선택 시 최저점 임계값
     th_seeds: 0.3

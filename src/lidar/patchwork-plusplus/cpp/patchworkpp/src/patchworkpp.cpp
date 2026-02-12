@@ -52,8 +52,9 @@ void PatchWorkpp::estimate_plane(const vector<PointXYZ> &ground) {
     eigen_ground.row(j++) << p.x, p.y, p.z;
   }
   Eigen::MatrixX3f centered = eigen_ground.rowwise() - eigen_ground.colwise().mean();
-  Eigen::MatrixX3f cov =
-      (centered.adjoint() * centered) / static_cast<double>(eigen_ground.rows() - 1);
+  double divisor = static_cast<double>(eigen_ground.rows() - 1);
+  if (divisor < 1.0) divisor = 1.0;
+  Eigen::MatrixX3f cov = (centered.adjoint() * centered) / divisor;
 
   pc_mean_.resize(3);
   pc_mean_ << eigen_ground.colwise().mean()(0), eigen_ground.colwise().mean()(1),
@@ -190,7 +191,8 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
 
     for (int ring_idx = 0; ring_idx < params_.num_rings_each_zone[zone_idx]; ++ring_idx) {
       for (int sector_idx = 0; sector_idx < params_.num_sectors_each_zone[zone_idx]; ++sector_idx) {
-        if (zone[ring_idx][sector_idx].size() < params_.num_min_pts) {
+        if (zone[ring_idx][sector_idx].empty() ||
+            zone[ring_idx][sector_idx].size() < params_.num_min_pts) {
           addCloud(cloud_nonground_, zone[ring_idx][sector_idx]);
           continue;
         }

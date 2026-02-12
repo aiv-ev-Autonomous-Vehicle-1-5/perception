@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target ground_seg_cores[0m
+Built target patchworkpp_node
+Built target ground_seg_cores
+[32mBuilding CXX object CMakeFiles/gseg_component.dir/src/GroundSegmentationServer.cpp.o[0m
