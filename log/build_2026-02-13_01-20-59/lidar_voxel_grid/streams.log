@@ -1,0 +1,78 @@
+[0.016s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid -DCMAKE_INSTALL_PREFIX=/home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid
+[0.024s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.103s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.108s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.123s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.124s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.127s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.133s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.156s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.158s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.167s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.195s] -- Found rclcpp_components: 16.0.17 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.205s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.221s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.242s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.263s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.446s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.450s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.542s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.546s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.550s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.642s] -- Found Qhull version 8.0.2
+[0.731s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.829s] [33mCMake Warning (dev) at CMakeLists.txt:14 (find_package):
+[0.829s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[0.829s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[0.829s]   command to set the policy and suppress this warning.
+[0.829s] 
+[0.830s]   CMake variable PCL_ROOT is set to:
+[0.830s] 
+[0.830s]     /usr
+[0.830s] 
+[0.830s]   For compatibility, CMake is ignoring the variable.
+[0.830s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.830s] [0m
+[0.846s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.883s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.883s] -- Configured cppcheck include dirs: /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid/include
+[0.883s] -- Configured cppcheck exclude dirs and/or files: 
+[0.883s] -- Added test 'lint_cmake' to check CMake code style
+[0.884s] -- Added test 'uncrustify' to check C / C++ code style
+[0.884s] -- Configured uncrustify additional arguments: 
+[0.884s] -- Added test 'xmllint' to check XML markup files
+[0.884s] -- Configuring done
+[0.899s] -- Generating done
+[0.903s] -- Build files have been written to: /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid
+[0.911s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid -DCMAKE_INSTALL_PREFIX=/home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid
+[0.912s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid -- -j28 -l28
+[0.948s] [35m[1mConsolidate compiler generated dependencies of target voxel_grid_node[0m
+[0.948s] [35m[1mConsolidate compiler generated dependencies of target voxel_grid_component[0m
+[0.960s] [ 50%] Built target voxel_grid_node
+[0.964s] [100%] Built target voxel_grid_component
+[0.972s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --build /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid -- -j28 -l28
+[0.972s] Invoking command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid
+[0.979s] -- Install configuration: ""
+[0.979s] -- Execute custom install script
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/lib/lidar_voxel_grid/voxel_grid_node
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/lib/libvoxel_grid_component.so
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/include/lidar_voxel_grid/voxel_grid_component.hpp
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/config/voxel_grid_params.yaml
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/ament_index/resource_index/package_run_dependencies/lidar_voxel_grid
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/ament_index/resource_index/parent_prefix_path/lidar_voxel_grid
+[0.979s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/environment/ament_prefix_path.sh
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/environment/ament_prefix_path.dsv
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/environment/path.sh
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/environment/path.dsv
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/local_setup.bash
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/local_setup.sh
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/local_setup.zsh
+[0.980s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/local_setup.dsv
+[0.980s] -- Symlinking: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/package.dsv
+[0.987s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/ament_index/resource_index/packages/lidar_voxel_grid
+[0.988s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/ament_index/resource_index/rclcpp_components/lidar_voxel_grid
+[0.988s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/cmake/lidar_voxel_gridConfig.cmake
+[0.988s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/cmake/lidar_voxel_gridConfig-version.cmake
+[0.988s] -- Up-to-date symlink: /home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid/share/lidar_voxel_grid/package.xml
+[0.989s] Invoked command in '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble /usr/bin/cmake --install /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid

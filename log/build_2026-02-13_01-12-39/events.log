@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.000150] (-) JobUnselected: {'identifier': 'lidar_clustering'}
+[0.000327] (-) JobUnselected: {'identifier': 'lidar_launch'}
+[0.000336] (-) JobUnselected: {'identifier': 'patchworkpp'}
+[0.000343] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.000349] (-) JobUnselected: {'identifier': 'velodyne_cropbox'}
+[0.000356] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.000364] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.000371] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.000377] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.000385] (lidar_voxel_grid) JobQueued: {'identifier': 'lidar_voxel_grid', 'dependencies': OrderedDict()}
+[0.000393] (lidar_voxel_grid) JobStarted: {'identifier': 'lidar_voxel_grid'}
+[0.006390] (lidar_voxel_grid) JobProgress: {'identifier': 'lidar_voxel_grid', 'progress': 'cmake'}
+[0.006696] (lidar_voxel_grid) Command: {'cmd': ['/usr/bin/cmake', '/home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid', '-DCMAKE_INSTALL_PREFIX=/home/aiv/ev_ws/ros2_ver2/install/lidar_voxel_grid'], 'cwd': '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aiv'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox/lib:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp/lib:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering/lib:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud/lib:/home/aiv/ev_ws/ros2/install/velodyne_driver/lib:/home/aiv/ev_ws/ros2/install/velodyne_msgs/lib:/home/aiv/ev_ws/ros2/install/velodyne_laserscan/lib:/home/aiv/ev_ws/ros2/install/patchworkpp/lib:/home/aiv/ros2_study/install/my_first_package_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/lib:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util/lib:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_serial/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_util/lib:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util/lib:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aiv'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/aiv/.nvm/versions/node/v24.13.0/bin'), ('NVM_INC', '/home/aiv/.nvm/versions/node/v24.13.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2075'), ('SYSTEMD_EXEC_PID', '2338'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3200'), ('NVM_DIR', '/home/aiv/.nvm'), ('COLCON_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install:/home/aiv/ev_ws/ros2/install:/home/aiv/ros2_study/install:/home/aiv/workspace/ros2/erp42_ros/install:/home/aiv/workspace/ros2/t870_ros/install:/home/aiv/workspace/ros2/erp42_racing_ros/install:/home/aiv/workspace/ros2/velodyne/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'aiv'), ('GEMINI_CLI', '1'), ('JOURNAL_STREAM', '8:8597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/aiv/.nvm/versions/node/v24.13.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2310,unix/aiv:/tmp/.ICE-unix/2310'), ('INVOCATION_ID', '303785d5eafa42cfac1b6e96fb439e54'), ('GEMINI_CLI_NO_RELAUNCH', 'true'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_second_package:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dfd7bdac-8684-4c07-a194-c0a32fa505b0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ev_ws/ros2/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/ros2_study/install/my_second_package/lib/python3.10/site-packages:/home/aiv/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs/local/lib/python3.10/dist-packages:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'code --wait'), ('CMAKE_PREFIX_PATH', '/home/aiv/ev_ws/ros2_ver2/install/velodyne:/home/aiv/ev_ws/ros2_ver2/install/lidar_launch:/home/aiv/ev_ws/ros2_ver2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2_ver2/install/velodyne_driver:/home/aiv/ev_ws/ros2_ver2/install/velodyne_msgs:/home/aiv/ev_ws/ros2_ver2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2_ver2/install/velodyne_cropbox:/home/aiv/ev_ws/ros2_ver2/install/patchworkpp:/home/aiv/ev_ws/ros2_ver2/install/lidar_clustering:/home/aiv/ev_ws/ros2/install/velodyne:/home/aiv/ev_ws/ros2/install/velodyne_pointcloud:/home/aiv/ev_ws/ros2/install/velodyne_driver:/home/aiv/ev_ws/ros2/install/velodyne_msgs:/home/aiv/ev_ws/ros2/install/velodyne_laserscan:/home/aiv/ev_ws/ros2/install/patchworkpp:/home/aiv/ros2_study/install/my_first_package_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne:/home/aiv/workspace/ros2/velodyne/install/velodyne_pointcloud:/home/aiv/workspace/ros2/velodyne/install/velodyne_driver:/home/aiv/workspace/ros2/velodyne/install/velodyne_msgs:/home/aiv/workspace/ros2/velodyne/install/velodyne_laserscan:/home/aiv/workspace/ros2/erp42_ros/install/erp42_serial:/home/aiv/workspace/ros2/erp42_ros/install/erp42_rqt_plugin:/home/aiv/workspace/ros2/erp42_ros/install/erp42_gazebo:/home/aiv/workspace/ros2/erp42_ros/install/erp42_util:/home/aiv/workspace/ros2/erp42_ros/install/erp42_msgs:/home/aiv/workspace/ros2/erp42_ros/install/erp42_description:/home/aiv/workspace/ros2/erp42_ros/install/erp42_cmake:/home/aiv/workspace/ros2/t870_ros/install/t870_serial:/home/aiv/workspace/ros2/t870_ros/install/t870_rqt_plugin:/home/aiv/workspace/ros2/t870_ros/install/t870_util:/home/aiv/workspace/ros2/t870_ros/install/t870_msgs:/home/aiv/workspace/ros2/t870_ros/install/t870_cmake:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_serial:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_rqt_plugin:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_gazebo:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_util:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_msgs:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_description:/home/aiv/workspace/ros2/erp42_racing_ros/install/erp42_racing_cmake:/home/aiv/ros2_study/install/my_second_package:/opt/ros/humble')]), 'shell': False}
+[0.062902] (lidar_voxel_grid) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.095587] (lidar_voxel_grid) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099898] (-) TimerEvent: {}
+[0.100083] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.146203] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.149596] (lidar_voxel_grid) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.149795] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.150216] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.151701] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200023] (-) TimerEvent: {}
+[0.209970] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.213763] (lidar_voxel_grid) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.213907] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.214007] (lidar_voxel_grid) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.217566] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300202] (-) TimerEvent: {}
+[0.316390] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.384189] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400404] (-) TimerEvent: {}
+[0.420173] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.425117] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.431339] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.439818] (lidar_voxel_grid) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.451244] (lidar_voxel_grid) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.484365] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.487329] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.500606] (-) TimerEvent: {}
+[0.505515] (lidar_voxel_grid) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.512973] (lidar_voxel_grid) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.562961] (lidar_voxel_grid) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.563338] (lidar_voxel_grid) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.600745] (-) TimerEvent: {}
+[0.615185] (lidar_voxel_grid) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.615667] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.645456] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.17 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.663117] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.680056] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.700952] (-) TimerEvent: {}
+[0.707961] (lidar_voxel_grid) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.720665] (lidar_voxel_grid) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.750178] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.750281] (lidar_voxel_grid) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.784931] (lidar_voxel_grid) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.795591] (lidar_voxel_grid) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.801035] (-) TimerEvent: {}
+[0.829201] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.829348] (lidar_voxel_grid) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.901122] (-) TimerEvent: {}
+[1.001327] (-) TimerEvent: {}
+[1.101546] (-) TimerEvent: {}
+[1.201765] (-) TimerEvent: {}
+[1.301981] (-) TimerEvent: {}
+[1.402215] (-) TimerEvent: {}
+[1.463446] (lidar_voxel_grid) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.475356] (lidar_voxel_grid) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.502285] (-) TimerEvent: {}
+[1.504630] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.505889] (lidar_voxel_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.549887] (lidar_voxel_grid) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.602369] (-) TimerEvent: {}
+[1.643887] (lidar_voxel_grid) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.648430] (lidar_voxel_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.652642] (lidar_voxel_grid) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.702480] (-) TimerEvent: {}
+[1.740507] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.802652] (-) TimerEvent: {}
+[1.835866] (lidar_voxel_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.902816] (-) TimerEvent: {}
+[1.924382] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.924733] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.925134] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.925518] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.925821] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.926213] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.926365] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[1.926530] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[1.926925] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.927394] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.927829] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.928257] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.928769] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.929192] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.929608] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.930062] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.930492] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.930931] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.931423] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.931821] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.932205] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[1.932371] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[1.932566] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[1.932977] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.933419] (lidar_voxel_grid) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.939990] (lidar_voxel_grid) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.940061] (lidar_voxel_grid) StdoutLine: {'line': b'See also "/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid/CMakeFiles/CMakeOutput.log".\n'}
+[1.940141] (lidar_voxel_grid) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[1.940183] (lidar_voxel_grid) StderrLine: {'line': b'  By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.940204] (lidar_voxel_grid) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "pcl_ros", but\n'}
+[1.940225] (lidar_voxel_grid) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.940245] (lidar_voxel_grid) StderrLine: {'line': b'\n'}
+[1.940265] (lidar_voxel_grid) StderrLine: {'line': b'  Could not find a package configuration file provided by "pcl_ros" with any\n'}
+[1.940288] (lidar_voxel_grid) StderrLine: {'line': b'  of the following names:\n'}
+[1.940308] (lidar_voxel_grid) StderrLine: {'line': b'\n'}
+[1.940328] (lidar_voxel_grid) StderrLine: {'line': b'    pcl_rosConfig.cmake\n'}
+[1.940348] (lidar_voxel_grid) StderrLine: {'line': b'    pcl_ros-config.cmake\n'}
+[1.940368] (lidar_voxel_grid) StderrLine: {'line': b'\n'}
+[1.940388] (lidar_voxel_grid) StderrLine: {'line': b'  Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set\n'}
+[1.940408] (lidar_voxel_grid) StderrLine: {'line': b'  "pcl_ros_DIR" to a directory containing one of the above files.  If\n'}
+[1.940427] (lidar_voxel_grid) StderrLine: {'line': b'  "pcl_ros" provides a separate development package or SDK, be sure it has\n'}
+[1.940446] (lidar_voxel_grid) StderrLine: {'line': b'  been installed.\n'}
+[1.940467] (lidar_voxel_grid) StderrLine: {'line': b'\n'}
+[1.940486] (lidar_voxel_grid) StderrLine: {'line': b'\x1b[0m\n'}
+[1.947835] (lidar_voxel_grid) CommandEnded: {'returncode': 1}
+[1.965145] (lidar_voxel_grid) JobEnded: {'identifier': 'lidar_voxel_grid', 'rc': 1}
+[1.975579] (-) EventReactorShutdown: {}

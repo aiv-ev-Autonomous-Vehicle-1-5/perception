@@ -1,0 +1,1 @@
+/home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid/ament_cmake_environment_hooks/local_setup.zsh

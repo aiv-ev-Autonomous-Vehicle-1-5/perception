@@ -13,6 +13,7 @@
   <exec_depend>velodyne_pointcloud</exec_depend>
   <exec_depend>velodyne_cropbox</exec_depend>
   <exec_depend>patchworkpp</exec_depend>
+  <exec_depend>lidar_voxel_grid</exec_depend>
   <exec_depend>lidar_clustering</exec_depend>
 
   <export>

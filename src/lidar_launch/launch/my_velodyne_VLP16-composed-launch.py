@@ -35,13 +35,19 @@ def generate_launch_description():
     with open(patchworkpp_params_file, 'r') as f:
         patchworkpp_params = yaml.safe_load(f)['patchworkpp_node']['ros__parameters']
 
+    # VoxelGrid parameters
+    voxel_grid_share_dir = ament_index_python.packages.get_package_share_directory('lidar_voxel_grid')
+    voxel_grid_params_file = os.path.join(voxel_grid_share_dir, 'config', 'voxel_grid_params.yaml')
+    with open(voxel_grid_params_file, 'r') as f:
+        voxel_grid_params = yaml.safe_load(f)['voxel_grid_component']['ros__parameters']
+
     # DBSCAN Clustering parameters
     clustering_share_dir = ament_index_python.packages.get_package_share_directory('lidar_clustering')
     clustering_params_file = os.path.join(clustering_share_dir, 'config', 'clustering_params.yaml')
     with open(clustering_params_file, 'r') as f:
         clustering_params = yaml.safe_load(f)['clustering_component']['ros__parameters']
 
-    # Pipeline: Driver -> Transform -> CropBox (ROI) -> Patchwork++ (Ground Seg) -> DBSCAN Clustering
+    # Pipeline: Driver -> Transform -> CropBox -> Patchwork++ -> VoxelGrid -> DBSCAN
     container = ComposableNodeContainer(
             name='velodyne_container',
             namespace='',
@@ -83,14 +89,25 @@ def generate_launch_description():
                         ('pointcloud_topic', 'velodyne_points_cropped'),
                     ]),
 
-                # 5. DBSCAN Clustering - obstacle grouping
+                # 5. VoxelGrid Downsampling
+                ComposableNode(
+                    package='lidar_voxel_grid',
+                    plugin='lidar_voxel_grid::VoxelGridComponent',
+                    name='voxel_grid_component',
+                    parameters=[voxel_grid_params],
+                    remappings=[
+                        ('input', '/patchworkpp/nonground'),
+                        ('output', '/voxel_grid/output')
+                    ]),
+
+                # 6. DBSCAN Clustering - obstacle grouping
                 ComposableNode(
                     package='lidar_clustering',
                     plugin='lidar_clustering::ClusteringComponent',
                     name='clustering_component',
                     parameters=[clustering_params],
                     remappings=[
-                        ('input', '/patchworkpp/nonground'),
+                        ('input', '/voxel_grid/output'),
                         ('output', '/clustering/nonground')
                     ]),
 

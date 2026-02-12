@@ -1,1 +1,1 @@
-lidar_clustering:patchworkpp:velodyne_cropbox:velodyne_driver:velodyne_pointcloud
+lidar_clustering:lidar_voxel_grid:patchworkpp:velodyne_cropbox:velodyne_driver:velodyne_pointcloud

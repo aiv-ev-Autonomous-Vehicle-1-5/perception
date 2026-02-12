@@ -20,9 +20,10 @@ ClusteringComponent::ClusteringComponent(const rclcpp::NodeOptions & options)
       dbscan_gpu_ = std::make_unique<DBSCANGpu>(50000);
       RCLCPP_INFO(this->get_logger(), "GPU DBSCAN initialized (max 50000 points)");
     } catch (const std::runtime_error & e) {
-      RCLCPP_WARN(this->get_logger(),
-        "GPU DBSCAN init failed: %s. Falling back to CPU.", e.what());
-      use_gpu_ = false;
+      RCLCPP_FATAL(this->get_logger(),
+        "GPU DBSCAN init failed: %s. Shutting down.", e.what());
+      rclcpp::shutdown();
+      return;
     }
   }
 
