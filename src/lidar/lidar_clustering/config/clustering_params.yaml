@@ -3,3 +3,7 @@ clustering_component:
     eps: 0.5
     min_pts: 5
     use_gpu: true
+    
+    # cluster filtering
+    min_cluster_size: 5
+    max_cluster_size: 5000

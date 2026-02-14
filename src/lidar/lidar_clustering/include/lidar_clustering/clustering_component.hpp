@@ -24,6 +24,8 @@ private:
   double eps_;
   int min_pts_;
   bool use_gpu_;
+  int min_cluster_size_;
+  int max_cluster_size_;
   std::unique_ptr<DBSCANGpu> dbscan_gpu_;
 };
 

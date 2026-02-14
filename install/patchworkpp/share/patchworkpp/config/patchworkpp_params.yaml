@@ -4,7 +4,7 @@ patchworkpp_node:
     frame_id: "velodyne"
 
     # 센서 지면 높이 (미터)
-    sensor_height: 1.88
+    sensor_height: 0.6
 
     # PCA 기반 지면 추정 반복 횟수
     num_iter: 3
@@ -19,13 +19,13 @@ patchworkpp_node:
     th_seeds: 0.3
 
     # 지면 두께 임계값
-    th_dist: 0.125
+    th_dist: 0.06
 
     # 수직 구조물 초기 시드 선택 임계값
     th_seeds_v: 0.25
 
     # 수직 구조물 두께 임계값
-    th_dist_v: 0.9
+    th_dist_v: 0.2
 
     # 지면 추정 최대 범위 (미터)
     max_range: 80.0
