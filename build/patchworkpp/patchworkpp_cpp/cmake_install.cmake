@@ -1,8 +1,8 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/cpp
+# Install script for directory: /home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/ros2_ver2/install/patchworkpp")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/perception/install/patchworkpp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aiv/ev_ws/ros2_ver2/build/patchworkpp/patchworkpp_cpp/patchworkpp/cmake_install.cmake")
+  include("/home/aiv/ev_ws/perception/build/patchworkpp/patchworkpp_cpp/patchworkpp/cmake_install.cmake")
 
 endif()
 

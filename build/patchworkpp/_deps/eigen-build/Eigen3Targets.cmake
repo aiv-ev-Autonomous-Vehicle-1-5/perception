@@ -49,7 +49,7 @@ unset(_expectedTargets)
 add_library(Eigen3::Eigen INTERFACE IMPORTED)
 
 set_target_properties(Eigen3::Eigen PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-src"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-src"
 )
 
 # This file does not depend on other imported targets which have

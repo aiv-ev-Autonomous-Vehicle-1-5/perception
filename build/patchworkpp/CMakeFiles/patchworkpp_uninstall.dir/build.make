@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/patchworkpp
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/patchworkpp
 
 # Utility rule file for patchworkpp_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/patchworkpp_uninstall.dir/compiler_depend.make
 include CMakeFiles/patchworkpp_uninstall.dir/progress.make
 
 CMakeFiles/patchworkpp_uninstall:
-	/usr/bin/cmake -P /home/aiv/ev_ws/ros2_ver2/build/patchworkpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aiv/ev_ws/perception/build/patchworkpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 patchworkpp_uninstall: CMakeFiles/patchworkpp_uninstall
 patchworkpp_uninstall: CMakeFiles/patchworkpp_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/patchworkpp_uninstall.dir/clean:
 .PHONY : CMakeFiles/patchworkpp_uninstall.dir/clean
 
 CMakeFiles/patchworkpp_uninstall.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/patchworkpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros /home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros /home/aiv/ev_ws/ros2_ver2/build/patchworkpp /home/aiv/ev_ws/ros2_ver2/build/patchworkpp /home/aiv/ev_ws/ros2_ver2/build/patchworkpp/CMakeFiles/patchworkpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/perception/build/patchworkpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/ros /home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/ros /home/aiv/ev_ws/perception/build/patchworkpp /home/aiv/ev_ws/perception/build/patchworkpp /home/aiv/ev_ws/perception/build/patchworkpp/CMakeFiles/patchworkpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/patchworkpp_uninstall.dir/depend
 

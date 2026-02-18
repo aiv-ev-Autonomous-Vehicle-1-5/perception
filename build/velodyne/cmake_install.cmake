@@ -1,8 +1,8 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne
+# Install script for directory: /home/aiv/ev_ws/perception/src/lidar/velodyne
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/ros2_ver2/install/velodyne")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/perception/install/velodyne")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,15 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE DIRECTORY FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE DIRECTORY FILES "/home/aiv/ev_ws/perception/src/lidar/velodyne/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/velodyne")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/velodyne")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/velodyne")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/velodyne")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne/environment" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne/environment" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,42 +67,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne/environment" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne/environment" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_index/share/ament_index/resource_index/packages/velodyne")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_index/share/ament_index/resource_index/packages/velodyne")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne/cmake" TYPE FILE FILES
-    "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_core/velodyneConfig.cmake"
-    "/home/aiv/ev_ws/ros2_ver2/build/velodyne/ament_cmake_core/velodyneConfig-version.cmake"
+    "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_core/velodyneConfig.cmake"
+    "/home/aiv/ev_ws/perception/build/velodyne/ament_cmake_core/velodyneConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/aiv/ev_ws/perception/src/lidar/velodyne/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -113,5 +113,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aiv/ev_ws/ros2_ver2/build/velodyne/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aiv/ev_ws/perception/build/velodyne/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

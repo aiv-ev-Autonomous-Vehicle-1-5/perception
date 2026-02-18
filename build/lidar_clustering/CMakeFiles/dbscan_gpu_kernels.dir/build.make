@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/lidar_clustering
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/lidar_clustering
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dbscan_gpu_kernels.dir/depend.make
@@ -70,10 +70,10 @@ include CMakeFiles/dbscan_gpu_kernels.dir/progress.make
 include CMakeFiles/dbscan_gpu_kernels.dir/flags.make
 
 CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o: CMakeFiles/dbscan_gpu_kernels.dir/flags.make
-CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o: /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu
+CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o: /home/aiv/ev_ws/perception/src/lidar/lidar_clustering/src/dbscan_gpu.cu
 CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o: CMakeFiles/dbscan_gpu_kernels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o"
-	/usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o -MF CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o.d -x cu -dc /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cu -o CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o"
+	/usr/local/cuda-12.6/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o -MF CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o.d -x cu -dc /home/aiv/ev_ws/perception/src/lidar/lidar_clustering/src/dbscan_gpu.cu -o CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o
 
 CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.i"
@@ -93,7 +93,7 @@ dbscan_gpu_kernels_EXTERNAL_OBJECTS =
 libdbscan_gpu_kernels.a: CMakeFiles/dbscan_gpu_kernels.dir/src/dbscan_gpu.cu.o
 libdbscan_gpu_kernels.a: CMakeFiles/dbscan_gpu_kernels.dir/build.make
 libdbscan_gpu_kernels.a: CMakeFiles/dbscan_gpu_kernels.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA static library libdbscan_gpu_kernels.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA static library libdbscan_gpu_kernels.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dbscan_gpu_kernels.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dbscan_gpu_kernels.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/dbscan_gpu_kernels.dir/clean:
 .PHONY : CMakeFiles/dbscan_gpu_kernels.dir/clean
 
 CMakeFiles/dbscan_gpu_kernels.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles/dbscan_gpu_kernels.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/perception/build/lidar_clustering && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/perception/src/lidar/lidar_clustering /home/aiv/ev_ws/perception/src/lidar/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles/dbscan_gpu_kernels.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dbscan_gpu_kernels.dir/depend
 

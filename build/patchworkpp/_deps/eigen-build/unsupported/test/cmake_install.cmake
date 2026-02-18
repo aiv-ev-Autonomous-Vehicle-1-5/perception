@@ -1,8 +1,8 @@
-# Install script for directory: /home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-src/unsupported/test
+# Install script for directory: /home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-src/unsupported/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/ros2_ver2/install/patchworkpp")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/ev_ws/perception/install/patchworkpp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

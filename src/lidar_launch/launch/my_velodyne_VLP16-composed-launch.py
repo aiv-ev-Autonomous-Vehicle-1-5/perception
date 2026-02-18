@@ -53,6 +53,13 @@ def generate_launch_description():
     with open(cluster_filter_params_file, 'r') as f:
         cluster_filter_params = yaml.safe_load(f)['filter_component']['ros__parameters']
 
+    # Tracking parameters
+    tracking_share_dir = ament_index_python.packages.get_package_share_directory('lidar_tracking')
+    tracking_params_file = os.path.join(tracking_share_dir, 'config', 'tracking_params.yaml')
+    # Tracking params are root level
+    with open(tracking_params_file, 'r') as f:
+        tracking_params = yaml.safe_load(f)['/**']['ros__parameters']
+
     # Pipeline: Driver -> Transform -> CropBox -> Patchwork++ -> VoxelGrid -> DBSCAN
     container = ComposableNodeContainer(
             name='velodyne_container',
@@ -127,6 +134,17 @@ def generate_launch_description():
                         ('input', '/clustering/nonground'),
                         ('output', '/clustering/filtered'),
                         ('cones', '/clustering/cones'),
+                    ]),
+
+                # 8. Tracking Node - L-ByteTrack
+                ComposableNode(
+                    package='lidar_tracking',
+                    plugin='lidar_tracking::TrackingNode',
+                    name='tracking_node',
+                    parameters=[tracking_params],
+                    remappings=[
+                        ('input', '/lidar/cones_detected'),
+                        ('output', '/lidar/cones_tracked'),
                     ]),
 
             ],

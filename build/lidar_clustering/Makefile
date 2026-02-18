@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/lidar_clustering
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/lidar_clustering
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles /home/aiv/ev_ws/perception/build/lidar_clustering//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

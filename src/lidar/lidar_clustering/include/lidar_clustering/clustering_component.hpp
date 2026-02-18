@@ -23,6 +23,7 @@ private:
 
   double eps_;
   int min_pts_;
+  double adaptive_range_ref_;
   std::unique_ptr<DBSCANGpu> dbscan_gpu_;
 };
 

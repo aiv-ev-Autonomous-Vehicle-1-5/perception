@@ -59,8 +59,9 @@ FilterComponent::FilterComponent(const rclcpp::NodeOptions & options)
   sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
     "input", qos,
     std::bind(&FilterComponent::callback, this, std::placeholders::_1));
-  pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("output", qos);
-  cone_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("cones", 10); // rviz2용 pub. planning엔 넘겨줘서 쓸 수가 없음
+  pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("output", qos); // 뭉쳐진 점들 색깔별로
+  cone_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("cones", 10); // 원기둥
+  cone_data_pub_ = this->create_publisher<lidar_interfaces::msg::ConeArray>("/lidar/cones_detected", 10); // tracking node로 넘겨주는 msg
 
   RCLCPP_INFO(this->get_logger(),
     "ClusterFilter initialized: size=[%d,%d], height=[%.2f,%.2f], width=[%.2f,%.2f], flatness<%.3f",
@@ -224,8 +225,10 @@ void FilterComponent::callback(const sensor_msgs::msg::PointCloud2::SharedPtr ms
   }
   pub_->publish(output_msg);
 
-  // --- Publish AABB MarkerArray ---
+  // --- Publish AABB MarkerArray & ConeArray Data ---
   visualization_msgs::msg::MarkerArray marker_array;
+  lidar_interfaces::msg::ConeArray cone_array_msg;
+  cone_array_msg.header = msg->header;
 
   // Delete all previous markers
   visualization_msgs::msg::Marker del;
@@ -240,6 +243,21 @@ void FilterComponent::callback(const sensor_msgs::msg::PointCloud2::SharedPtr ms
     float sx = bbox.x_max - bbox.x_min;
     float sy = bbox.y_max - bbox.y_min;
     float sz = bbox.z_max - bbox.z_min;
+
+    // Create Cone message
+    lidar_interfaces::msg::Cone cone;
+    cone.header = msg->header;
+    cone.position.x = cx;
+    cone.position.y = cy;
+    cone.position.z = cz;
+    cone.dimensions.x = sx;
+    cone.dimensions.y = sy;
+    cone.dimensions.z = sz;
+    cone.label = label;
+    // Simple confidence assignment based on cluster properties (placeholder logic)
+    // In real app, you might use point density or model matching score.
+    cone.confidence = 1.0f; 
+    cone_array_msg.cones.push_back(cone);
 
     double r, g, b;
     paletteColor(label, r, g, b);
@@ -290,6 +308,7 @@ void FilterComponent::callback(const sensor_msgs::msg::PointCloud2::SharedPtr ms
   }
 
   cone_pub_->publish(marker_array);
+  cone_data_pub_->publish(cone_array_msg);
 
   RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
     "Filter: %u pts -> %d clusters (%d filtered), %d noise, %u output",

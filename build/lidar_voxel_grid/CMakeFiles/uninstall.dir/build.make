@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/lidar_voxel_grid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/lidar_voxel_grid
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_voxel_grid /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid /home/aiv/ev_ws/ros2_ver2/build/lidar_voxel_grid/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/perception/build/lidar_voxel_grid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/perception/src/lidar/lidar_voxel_grid /home/aiv/ev_ws/perception/src/lidar/lidar_voxel_grid /home/aiv/ev_ws/perception/build/lidar_voxel_grid /home/aiv/ev_ws/perception/build/lidar_voxel_grid /home/aiv/ev_ws/perception/build/lidar_voxel_grid/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -13,9 +13,9 @@ project(eigen-populate NONE)
 
 include(ExternalProject)
 ExternalProject_Add(eigen-populate
-                     "UPDATE_DISCONNECTED" "False" "URL" "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz" "PATCH_COMMAND" "patch" "-p1" "<" "/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/cpp/cmake/eigen.patch" "UPDATE_DISCONNECTED" "1"
-                    SOURCE_DIR          "/home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-src"
-                    BINARY_DIR          "/home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-build"
+                     "UPDATE_DISCONNECTED" "False" "URL" "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz" "PATCH_COMMAND" "patch" "-p1" "<" "/home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/cpp/cmake/eigen.patch" "UPDATE_DISCONNECTED" "1"
+                    SOURCE_DIR          "/home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-src"
+                    BINARY_DIR          "/home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

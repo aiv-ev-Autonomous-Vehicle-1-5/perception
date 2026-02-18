@@ -9,6 +9,6 @@ filter_component:
 
     # bounding box filter — lava cone dimensions
     min_height: 0.1
-    max_height: 1.0
+    max_height: 1.5
     min_width: 0.1
-    max_width: 1.0
+    max_width: 1.5

@@ -10,6 +10,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
+find_package(lidar_interfaces REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 add_library(filter_component SHARED
@@ -28,6 +29,7 @@ ament_target_dependencies(filter_component
   rclcpp_components
   sensor_msgs
   visualization_msgs
+  lidar_interfaces
 )
 
 target_link_libraries(filter_component
@@ -57,6 +59,7 @@ ament_export_dependencies(
   rclcpp_components
   sensor_msgs
   visualization_msgs
+  lidar_interfaces
 )
 
 ament_package()

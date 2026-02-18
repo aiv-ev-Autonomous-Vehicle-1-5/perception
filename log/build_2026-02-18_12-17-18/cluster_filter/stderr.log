@@ -1,4 +1,0 @@
-/home/aiv/ev_ws/ros2_ver2/src/lidar/cluster_filter/src/filter_component.cpp: In member function ‘void cluster_filter::FilterComponent::callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
-/home/aiv/ev_ws/ros2_ver2/src/lidar/cluster_filter/src/filter_component.cpp:240:11: warning: unused variable ‘cz’ [-Wunused-variable]
-  240 |     float cz = (bbox.z_min + bbox.z_max) * 0.5f;
-      |           ^~

@@ -1,6 +1,6 @@
 
-set(CTEST_SOURCE_DIRECTORY  "/home/aiv/ev_ws/ros2_ver2/src/lidar/patchwork-plusplus/ros")
-set(CTEST_BINARY_DIRECTORY  "/home/aiv/ev_ws/ros2_ver2/build/patchworkpp")
+set(CTEST_SOURCE_DIRECTORY  "/home/aiv/ev_ws/perception/src/lidar/patchwork-plusplus/ros")
+set(CTEST_BINARY_DIRECTORY  "/home/aiv/ev_ws/perception/build/patchworkpp")
 set(CTEST_CMAKE_GENERATOR   "Unix Makefiles")
 set(CTEST_BUILD_NAME        "linux-6.8.0-94-generic-_-11.4.0-sse2-64bit")
 set(CTEST_SITE              "aiv")

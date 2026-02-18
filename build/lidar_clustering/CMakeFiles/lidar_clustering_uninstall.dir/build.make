@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/lidar_clustering
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/lidar_clustering
 
 # Utility rule file for lidar_clustering_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/lidar_clustering_uninstall.dir/compiler_depend.make
 include CMakeFiles/lidar_clustering_uninstall.dir/progress.make
 
 CMakeFiles/lidar_clustering_uninstall:
-	/usr/bin/cmake -P /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aiv/ev_ws/perception/build/lidar_clustering/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 lidar_clustering_uninstall: CMakeFiles/lidar_clustering_uninstall
 lidar_clustering_uninstall: CMakeFiles/lidar_clustering_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/lidar_clustering_uninstall.dir/clean:
 .PHONY : CMakeFiles/lidar_clustering_uninstall.dir/clean
 
 CMakeFiles/lidar_clustering_uninstall.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering /home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles/lidar_clustering_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/perception/build/lidar_clustering && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/perception/src/lidar/lidar_clustering /home/aiv/ev_ws/perception/src/lidar/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering /home/aiv/ev_ws/perception/build/lidar_clustering/CMakeFiles/lidar_clustering_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lidar_clustering_uninstall.dir/depend
 

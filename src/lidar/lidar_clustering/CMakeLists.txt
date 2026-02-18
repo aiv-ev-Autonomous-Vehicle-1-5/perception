@@ -8,7 +8,7 @@ endif()
 # CUDA configuration
 find_package(CUDAToolkit REQUIRED)
 set(CMAKE_CUDA_STANDARD 14)
-set(CMAKE_CUDA_ARCHITECTURES 86)  # Ampere; PTX JIT to Ada Lovelace (sm_89) at runtime
+set(CMAKE_CUDA_ARCHITECTURES 89)  # Ada Lovelace (RTX 4060)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)

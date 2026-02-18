@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-src
-BuildDirectory: /home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-build
+SourceDirectory: /home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-src
+BuildDirectory: /home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://my.cdash.org/submit.php?project=Eigen
 NightlyStartTime: 00:00:00 UTC
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/aiv/ev_ws/ros2_ver2/build/patchworkpp/_deps/eigen-src"
+ConfigureCommand: "/usr/bin/cmake" "/home/aiv/ev_ws/perception/build/patchworkpp/_deps/eigen-src"
 MakeCommand: /usr/bin/cmake --build . --target buildtests --config "${CTEST_CONFIGURATION_TYPE}" --  
 DefaultCTestConfigurationType: Release
 
@@ -75,7 +75,7 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: /usr/bin/cuda-memcheck
+MemoryCheckCommand: /usr/local/cuda-12.6/bin/compute-sanitizer
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

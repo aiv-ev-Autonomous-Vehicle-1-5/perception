@@ -186,6 +186,15 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
   std::vector<patchwork::RevertCandidate> candidates;
   std::vector<double> ringwise_flatness;
 
+  // GLE 진단 카운터
+  int diag_rejected_uprightness = 0;
+  int diag_rejected_heading = 0;
+  int diag_accepted_ground = 0;
+  int diag_to_tgr = 0;
+  int diag_skipped_few_pts = 0;
+  double diag_uprightness_sum = 0.0;
+  int diag_uprightness_count = 0;
+
   for (int zone_idx = 0; zone_idx < params_.num_zones; ++zone_idx) {
     auto zone = ConcentricZoneModel_[zone_idx];
 
@@ -193,6 +202,7 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
       for (int sector_idx = 0; sector_idx < params_.num_sectors_each_zone[zone_idx]; ++sector_idx) {
         if (zone[ring_idx][sector_idx].empty() ||
             zone[ring_idx][sector_idx].size() < params_.num_min_pts) {
+          diag_skipped_few_pts += zone[ring_idx][sector_idx].size();
           addCloud(cloud_nonground_, zone[ring_idx][sector_idx]);
           continue;
         }
@@ -253,6 +263,10 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
           is_flat         = ground_flatness < params_.flatness_thr[concentric_idx];
         }
 
+        // 진단: uprightness 통계 수집
+        diag_uprightness_sum += ground_uprightness;
+        diag_uprightness_count++;
+
         /*
             Store the elevation & flatness variables
             for A-GLE (Adaptive Ground Likelihood Estimation)
@@ -267,14 +281,19 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
 
         // Ground estimation based on conditions
         if (!is_upright) {
+          diag_rejected_uprightness += regionwise_ground_.size();
           addCloud(cloud_nonground_, regionwise_ground_);
         } else if (!is_near_zone) {
+          diag_accepted_ground += regionwise_ground_.size();
           addCloud(cloud_ground_, regionwise_ground_);
         } else if (!is_heading_outside) {
+          diag_rejected_heading += regionwise_ground_.size();
           addCloud(cloud_nonground_, regionwise_ground_);
         } else if (is_not_elevated || is_flat) {
+          diag_accepted_ground += regionwise_ground_.size();
           addCloud(cloud_ground_, regionwise_ground_);
         } else {
+          diag_to_tgr += regionwise_ground_.size();
           patchwork::RevertCandidate candidate(concentric_idx,
                                                sector_idx,
                                                ground_flatness,
@@ -322,16 +341,26 @@ void PatchWorkpp::estimateGround(Eigen::MatrixXf cloud_in) {
   clock_t end = clock();
   time_taken_ = end - beg;
 
+  // GLE 진단 로그 (항상 출력)
+  double avg_uprightness = diag_uprightness_count > 0
+    ? diag_uprightness_sum / diag_uprightness_count : 0.0;
+  cout << "\033[1;36m[GLE DIAG]\033[0m"
+       << " ground=" << diag_accepted_ground
+       << " | rej_upright=" << diag_rejected_uprightness
+       << " | rej_heading=" << diag_rejected_heading
+       << " | to_TGR=" << diag_to_tgr
+       << " | few_pts=" << diag_skipped_few_pts
+       << " | avg_uprightness=" << avg_uprightness
+       << " (thr=" << params_.uprightness_thr << ")"
+       << endl;
+
   if (params_.verbose) {
     cout << "Time taken : " << time_taken_ / static_cast<double>(1000000)
          << "(sec) ~ "
-         //  << t_flush / double(1000000)  << "(flush) + "
          << t_czm / static_cast<double>(1000000) << "(czm) + "
          << t_sort / static_cast<double>(1000000) << "(sort) + "
          << t_pca / static_cast<double>(1000000) << "(pca) + "
          << t_gle / static_cast<double>(1000000) << "(estimate)" << endl;
-    //  << t_revert / double(1000000) << "(revert) + "
-    //  << t_update / double(1000000) << "(update)" << endl;
   }
 
   if (params_.verbose)

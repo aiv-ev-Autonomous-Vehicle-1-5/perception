@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_msgs
+CMAKE_SOURCE_DIR = /home/aiv/ev_ws/perception/src/lidar/velodyne_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs
+CMAKE_BINARY_DIR = /home/aiv/ev_ws/perception/build/velodyne_msgs
 
 # Utility rule file for ament_cmake_python_copy_velodyne_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/compiler_depend.mak
 include CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_velodyne_msgs:
-	/usr/bin/cmake -E copy_directory /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs/rosidl_generator_py/velodyne_msgs /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs/ament_cmake_python/velodyne_msgs/velodyne_msgs
+	/usr/bin/cmake -E copy_directory /home/aiv/ev_ws/perception/build/velodyne_msgs/rosidl_generator_py/velodyne_msgs /home/aiv/ev_ws/perception/build/velodyne_msgs/ament_cmake_python/velodyne_msgs/velodyne_msgs
 
 ament_cmake_python_copy_velodyne_msgs: CMakeFiles/ament_cmake_python_copy_velodyne_msgs
 ament_cmake_python_copy_velodyne_msgs: CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/depend:
-	cd /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_msgs /home/aiv/ev_ws/ros2_ver2/src/lidar/velodyne_msgs /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs /home/aiv/ev_ws/ros2_ver2/build/velodyne_msgs/CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/ev_ws/perception/build/velodyne_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/ev_ws/perception/src/lidar/velodyne_msgs /home/aiv/ev_ws/perception/src/lidar/velodyne_msgs /home/aiv/ev_ws/perception/build/velodyne_msgs /home/aiv/ev_ws/perception/build/velodyne_msgs /home/aiv/ev_ws/perception/build/velodyne_msgs/CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_velodyne_msgs.dir/depend
 
