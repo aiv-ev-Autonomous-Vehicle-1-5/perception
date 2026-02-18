@@ -47,6 +47,12 @@ def generate_launch_description():
     with open(clustering_params_file, 'r') as f:
         clustering_params = yaml.safe_load(f)['clustering_component']['ros__parameters']
 
+    # Cluster Filter parameters
+    cluster_filter_share_dir = ament_index_python.packages.get_package_share_directory('cluster_filter')
+    cluster_filter_params_file = os.path.join(cluster_filter_share_dir, 'config', 'filter_params.yaml')
+    with open(cluster_filter_params_file, 'r') as f:
+        cluster_filter_params = yaml.safe_load(f)['filter_component']['ros__parameters']
+
     # Pipeline: Driver -> Transform -> CropBox -> Patchwork++ -> VoxelGrid -> DBSCAN
     container = ComposableNodeContainer(
             name='velodyne_container',
@@ -109,6 +115,18 @@ def generate_launch_description():
                     remappings=[
                         ('input', '/voxel_grid/output'),
                         ('output', '/clustering/nonground')
+                    ]),
+
+                # 7. Cluster Filter - noise/wall/floor remnant removal, RGB coloring
+                ComposableNode(
+                    package='cluster_filter',
+                    plugin='cluster_filter::FilterComponent',
+                    name='filter_component',
+                    parameters=[cluster_filter_params],
+                    remappings=[
+                        ('input', '/clustering/nonground'),
+                        ('output', '/clustering/filtered'),
+                        ('cones', '/clustering/cones'),
                     ]),
 
             ],

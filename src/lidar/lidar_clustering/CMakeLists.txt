@@ -32,7 +32,6 @@ target_link_libraries(dbscan_gpu_kernels
 
 # Main ROS2 component library (compiled by g++)
 add_library(clustering_component SHARED
-  src/dbscan.cpp
   src/dbscan_gpu.cpp
   src/clustering_component.cpp
 )

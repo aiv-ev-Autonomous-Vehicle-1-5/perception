@@ -247,30 +247,6 @@ src/clustering_component.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clustering_component.dir/build.make CMakeFiles/clustering_component.dir/src/clustering_component.cpp.s
 .PHONY : src/clustering_component.cpp.s
 
-src/dbscan.o: src/dbscan.cpp.o
-.PHONY : src/dbscan.o
-
-# target to build an object file
-src/dbscan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clustering_component.dir/build.make CMakeFiles/clustering_component.dir/src/dbscan.cpp.o
-.PHONY : src/dbscan.cpp.o
-
-src/dbscan.i: src/dbscan.cpp.i
-.PHONY : src/dbscan.i
-
-# target to preprocess a source file
-src/dbscan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clustering_component.dir/build.make CMakeFiles/clustering_component.dir/src/dbscan.cpp.i
-.PHONY : src/dbscan.cpp.i
-
-src/dbscan.s: src/dbscan.cpp.s
-.PHONY : src/dbscan.s
-
-# target to generate assembly for a file
-src/dbscan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clustering_component.dir/build.make CMakeFiles/clustering_component.dir/src/dbscan.cpp.s
-.PHONY : src/dbscan.cpp.s
-
 src/dbscan_gpu.o: src/dbscan_gpu.cpp.o
 .PHONY : src/dbscan_gpu.o
 
@@ -339,9 +315,6 @@ help:
 	@echo "... src/clustering_component.o"
 	@echo "... src/clustering_component.i"
 	@echo "... src/clustering_component.s"
-	@echo "... src/dbscan.o"
-	@echo "... src/dbscan.i"
-	@echo "... src/dbscan.s"
 	@echo "... src/dbscan_gpu.o"
 	@echo "... src/dbscan_gpu.i"
 	@echo "... src/dbscan_gpu.s"

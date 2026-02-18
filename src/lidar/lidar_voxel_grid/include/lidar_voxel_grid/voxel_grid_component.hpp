@@ -22,6 +22,7 @@ private:
   double leaf_size_x_;
   double leaf_size_y_;
   double leaf_size_z_;
+  double near_range_;   // XY distance threshold (m): within → voxel grid, beyond → passthrough
 };
 
 }  // namespace lidar_voxel_grid

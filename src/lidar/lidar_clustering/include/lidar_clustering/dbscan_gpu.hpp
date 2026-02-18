@@ -8,7 +8,9 @@
 namespace lidar_clustering
 {
 
-struct Point3D;  // forward declaration (defined in dbscan.hpp)
+struct Point3D {
+  float x, y, z;
+};
 
 class DBSCANGpu
 {

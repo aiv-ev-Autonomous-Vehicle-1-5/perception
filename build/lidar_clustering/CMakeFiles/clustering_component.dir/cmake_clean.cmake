@@ -2,8 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/clustering_component.dir/cmake_device_link.o"
   "CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o"
   "CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o.d"
-  "CMakeFiles/clustering_component.dir/src/dbscan.cpp.o"
-  "CMakeFiles/clustering_component.dir/src/dbscan.cpp.o.d"
   "CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o"
   "CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o.d"
   "libclustering_component.pdb"

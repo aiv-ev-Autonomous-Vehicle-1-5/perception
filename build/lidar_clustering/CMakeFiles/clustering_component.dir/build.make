@@ -69,24 +69,10 @@ include CMakeFiles/clustering_component.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/clustering_component.dir/flags.make
 
-CMakeFiles/clustering_component.dir/src/dbscan.cpp.o: CMakeFiles/clustering_component.dir/flags.make
-CMakeFiles/clustering_component.dir/src/dbscan.cpp.o: /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan.cpp
-CMakeFiles/clustering_component.dir/src/dbscan.cpp.o: CMakeFiles/clustering_component.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clustering_component.dir/src/dbscan.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clustering_component.dir/src/dbscan.cpp.o -MF CMakeFiles/clustering_component.dir/src/dbscan.cpp.o.d -o CMakeFiles/clustering_component.dir/src/dbscan.cpp.o -c /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan.cpp
-
-CMakeFiles/clustering_component.dir/src/dbscan.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clustering_component.dir/src/dbscan.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan.cpp > CMakeFiles/clustering_component.dir/src/dbscan.cpp.i
-
-CMakeFiles/clustering_component.dir/src/dbscan.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clustering_component.dir/src/dbscan.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan.cpp -o CMakeFiles/clustering_component.dir/src/dbscan.cpp.s
-
 CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o: CMakeFiles/clustering_component.dir/flags.make
 CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o: /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cpp
 CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o: CMakeFiles/clustering_component.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o -MF CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o.d -o CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o -c /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/dbscan_gpu.cpp
 
 CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.s: cmake_force
 CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o: CMakeFiles/clustering_component.dir/flags.make
 CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o: /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/clustering_component.cpp
 CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o: CMakeFiles/clustering_component.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o -MF CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o.d -o CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o -c /home/aiv/ev_ws/ros2_ver2/src/lidar/lidar_clustering/src/clustering_component.cpp
 
 CMakeFiles/clustering_component.dir/src/clustering_component.cpp.i: cmake_force
@@ -113,14 +99,12 @@ CMakeFiles/clustering_component.dir/src/clustering_component.cpp.s: cmake_force
 
 # Object files for target clustering_component
 clustering_component_OBJECTS = \
-"CMakeFiles/clustering_component.dir/src/dbscan.cpp.o" \
 "CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o" \
 "CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o"
 
 # External object files for target clustering_component
 clustering_component_EXTERNAL_OBJECTS =
 
-CMakeFiles/clustering_component.dir/cmake_device_link.o: CMakeFiles/clustering_component.dir/src/dbscan.cpp.o
 CMakeFiles/clustering_component.dir/cmake_device_link.o: CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o
 CMakeFiles/clustering_component.dir/cmake_device_link.o: CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o
 CMakeFiles/clustering_component.dir/cmake_device_link.o: CMakeFiles/clustering_component.dir/build.make
@@ -216,7 +200,7 @@ CMakeFiles/clustering_component.dir/cmake_device_link.o: /opt/ros/humble/lib/lib
 CMakeFiles/clustering_component.dir/cmake_device_link.o: /opt/ros/humble/lib/librcutils.so
 CMakeFiles/clustering_component.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libcudart.so
 CMakeFiles/clustering_component.dir/cmake_device_link.o: CMakeFiles/clustering_component.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CUDA device code CMakeFiles/clustering_component.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA device code CMakeFiles/clustering_component.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clustering_component.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -225,14 +209,12 @@ CMakeFiles/clustering_component.dir/build: CMakeFiles/clustering_component.dir/c
 
 # Object files for target clustering_component
 clustering_component_OBJECTS = \
-"CMakeFiles/clustering_component.dir/src/dbscan.cpp.o" \
 "CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o" \
 "CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o"
 
 # External object files for target clustering_component
 clustering_component_EXTERNAL_OBJECTS =
 
-libclustering_component.so: CMakeFiles/clustering_component.dir/src/dbscan.cpp.o
 libclustering_component.so: CMakeFiles/clustering_component.dir/src/dbscan_gpu.cpp.o
 libclustering_component.so: CMakeFiles/clustering_component.dir/src/clustering_component.cpp.o
 libclustering_component.so: CMakeFiles/clustering_component.dir/build.make
@@ -329,7 +311,7 @@ libclustering_component.so: /opt/ros/humble/lib/librcutils.so
 libclustering_component.so: /usr/lib/x86_64-linux-gnu/libcudart.so
 libclustering_component.so: CMakeFiles/clustering_component.dir/cmake_device_link.o
 libclustering_component.so: CMakeFiles/clustering_component.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libclustering_component.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aiv/ev_ws/ros2_ver2/build/lidar_clustering/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libclustering_component.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clustering_component.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

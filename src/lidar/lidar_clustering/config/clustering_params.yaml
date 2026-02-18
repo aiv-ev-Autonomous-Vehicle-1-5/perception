@@ -1,9 +1,4 @@
 clustering_component:
   ros__parameters:
-    eps: 0.5
+    eps: 0.2
     min_pts: 5
-    use_gpu: true
-    
-    # cluster filtering
-    min_cluster_size: 5
-    max_cluster_size: 5000

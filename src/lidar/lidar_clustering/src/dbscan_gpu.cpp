@@ -4,7 +4,6 @@
 
 #include "lidar_clustering/dbscan_gpu.hpp"
 #include "lidar_clustering/dbscan_gpu_kernels.h"
-#include "lidar_clustering/dbscan.hpp"  // Point3D
 
 #include <algorithm>
 #include <numeric>
